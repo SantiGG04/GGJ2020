@@ -139,7 +139,6 @@ MonoBehaviour:
   velocidadMovPenalizado: 2
   duracionPenalizacion: 2
   timer: 0
-  canCount: 0
   origenRayCasts: {fileID: 3236779178291890680}
   distanciaRayCastL: 0.51
   distanciaRayCastR: 0.51
@@ -303,8 +302,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce357f7eb19525d4da9d901a6ea5bcf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FuerzaVertical: 4
-  FuerzaVerticalMaximaParaCaidas: -8
+  FuerzaVertical: 0
+  FuerzaVerticalMaximaParaCaidas: -5
   EnPiso: 0
   Gravedad: 15
   TiempoMinimoEnAire: 0.1
@@ -324,7 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SaltosRestantes: 1
-  FuerzaSalto: 7
+  FuerzaSalto: 8
   SaltosMultiples: 1
 --- !u!54 &3236779178291890687
 Rigidbody:
@@ -405,7 +404,7 @@ BoxCollider:
   m_GameObject: {fileID: 3236779178363631032}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
