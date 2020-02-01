@@ -4,7 +4,10 @@ using System.Collections;
 public class MovimientoPersonaje01 : MonoBehaviour
 
 {
-    public float VelocidadMovimiento;
+    public float velocidadMovimiento;
+	public bool estoyPenalizado = false;
+	public float velocidadMovPenalizado;
+
 
 	public GameObject origenRayCasts;
 	public float distanciaRayCastL;
@@ -42,9 +45,9 @@ public class MovimientoPersonaje01 : MonoBehaviour
 			rBloqueada = false;
 		}
 
-		if(Input.GetKey(KeyCode.RightArrow) && rBloqueada == false)
-			transform.Translate(VelocidadMovimiento * Time.deltaTime, 0, 0);
-		if (Input.GetKey(KeyCode.LeftArrow) && lBloqueada == false)
-			transform.Translate(-VelocidadMovimiento * Time.deltaTime, 0, 0);
+		if(Input.GetKey(KeyCode.RightArrow) && rBloqueada == false && estoyPenalizado == false)
+			transform.Translate(velocidadMovimiento * Time.deltaTime, 0, 0);
+		if (Input.GetKey(KeyCode.LeftArrow) && lBloqueada == false && estoyPenalizado == false)
+			transform.Translate(-velocidadMovimiento * Time.deltaTime, 0, 0);
     }
 }
