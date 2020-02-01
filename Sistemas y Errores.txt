@@ -1,0 +1,22 @@
+Sistema de Gravedad
+	Error: Te volves más pesado, saltas menos, vas más lento
+	Piezas: 
+
+Sistema de Seguidad
+	Error: Se cierran puertas, te corta atajos, te impide acceder a ciertas zonas
+	Piezas: 
+
+Sistema de Geoposicionamiengo
+	Error: Te reduce el minimapa
+	Piezas: 
+
+Sistema de Iluminación
+	Error: Baja las luces / Corta la luz en cierta zona
+	Piezas: 
+
+Sistema de IA de Mantenimiento
+	Error: Liberta enemigos
+	Piezas: 
+
+Piezas
+	Tuercas, Tornillos, Tubos, Cables, 
