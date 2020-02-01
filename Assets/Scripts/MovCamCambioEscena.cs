@@ -5,19 +5,52 @@ using UnityEngine;
 public class MovCamCambioEscena : MonoBehaviour
 {
     public Camera mainCam;
-    public float velocidadMovimiento;
-    public GameObject mainCanvas;
+    // public GameObject mainCanvas;
 
-    void Start()
-    {
-        mainCam = Camera.main;
-        mainCanvas = GameObject.Find("Canvas");
-        velocidadMovimiento *= Time.deltaTime;
-        mainCanvas.GetComponent<Canvas>().enabled = false;
-    }
+    /*
+    public float cantidaMovimientos; // La Cantidad de veces que va a llamar la funcion MoverCamara
+    public float velocidadMovimiento; // Cuanto pasa entre cada vez que llama a la funcion MoverCamara
+    public float longitudMovimiento; // Que tanto se mueve cada vez que llamamos a la funcion MoverCamara
+    */
+
+    public float cantidadMovimiento; // Cuanto se mueve la Camara
+
+    private bool deboMoverme = false;
+    private int contadorMovimientos = 0;
 
     void Update()
     {
-        mainCam.gameObject.transform.Translate(velocidadMovimiento, 0, 0);
+        if (deboMoverme)
+        {
+            //mainCanvas.GetComponent<Canvas>().enabled = false;
+
+            //InvokeRepeating("MoverCamara", 0, velocidadMovimiento);
+
+            mainCam.gameObject.transform.Translate(cantidadMovimiento, 0, 0);
+
+            deboMoverme = false;
+        }        
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "Personaje")
+        {
+            deboMoverme = true;
+        }
+    }
+
+    /*
+    void MoverCamara()
+    {
+        mainCam.gameObject.transform.Translate(longitudMovimiento, 0, 0);
+
+        contadorMovimientos++;
+
+        if (contadorMovimientos == cantidaMovimientos)
+        {
+            CancelInvoke();
+        }
+    }
+    */
 }
