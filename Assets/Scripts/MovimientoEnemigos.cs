@@ -21,7 +21,12 @@ public class MovimientoEnemigos : MonoBehaviour
 		Ray rColision = new Ray(origenRayCasts.transform.position, Vector3.right);
 		Debug.DrawRay(origenRayCasts.transform.position, Vector3.right * distanciaRayCastR);
 
-		if (Physics.Raycast(lColision, out lHit, distanciaRayCastL) || Physics.Raycast(rColision, out rHit, distanciaRayCastR))
+		if (Physics.Raycast(lColision, out lHit, distanciaRayCastL, 11 << 11))
+		{
+			velocidadMovimiento *= -1;
+		}
+		
+		if  (Physics.Raycast(rColision, out rHit, distanciaRayCastR, 11 << 11))
 		{
 			velocidadMovimiento *= -1;
 		}
