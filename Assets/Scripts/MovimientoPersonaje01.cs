@@ -18,7 +18,7 @@ public class MovimientoPersonaje01 : MonoBehaviour
 		Ray lColision = new Ray (origenRayCasts.transform.position, Vector3.left);
 		Debug.DrawRay (origenRayCasts.transform.position, Vector3.left * distanciaRayCastL);
 
-		if (Physics.Raycast (lColision, out lHit, distanciaRayCastL))
+		if (Physics.Raycast (lColision, out lHit, distanciaRayCastL, 11 << 11)) // El "N° << N°" indica de qué layer a qué layer tiene en cuenta
 		{
 			lBloqueada = true;
 		}
@@ -32,7 +32,7 @@ public class MovimientoPersonaje01 : MonoBehaviour
 		Ray rColision = new Ray (origenRayCasts.transform.position, Vector3.right);
 		Debug.DrawRay (origenRayCasts.transform.position, Vector3.right * distanciaRayCastR);
 
-		if (Physics.Raycast (rColision, out rHit, distanciaRayCastR))
+		if (Physics.Raycast (rColision, out rHit, distanciaRayCastR, 11 << 11)) // El "N° << N°" indica de qué layer a qué layer tiene en cuenta
 		{
 			rBloqueada = true;
 		}

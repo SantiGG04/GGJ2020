@@ -18,9 +18,9 @@ public class SaltoPersonaje01: MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.Space) && SaltosRestantes > 0 && Grav.EnPiso)
 		{
-			//Debug.Log ("Salto");
+			Debug.Log ("Salto");
 			Grav.FuerzaVertical = FuerzaSalto;
-			Grav.EnPiso = false;
+			Grav.EnAire();
 			SaltosRestantes--;
 			//Coll.isTrigger = true;// Sólo usar si en el código Gravedad01, en la función EnAire, dejamos la parte que anula el Trigger cuando el personaje está ascendiendo
 		}

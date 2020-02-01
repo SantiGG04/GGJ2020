@@ -12,16 +12,14 @@ public class Gravedad01 : MonoBehaviour
 	public float TiempoMinimoEnAire = 0.1f;
 	public float Contador;
 
-	void OnCollisionStay(Collision col)
+	public GameObject origenRayCast;
+	public float distanciaRayCast;
+	//public bool rBloqueada;
+
+	/*void OnCollisionStay(Collision col)
 	{
 		if (col.gameObject.layer == LayerMask.NameToLayer("Piso"))
 		{
-			//De momento lo saco, prefiero que siempre que esté en el piso haga que la FuerzaVertical sea 0
-			/*if (FuerzaVertical <= -4)// Hace un pequeño y casi imperceptible rebote si cae con mucha fuerza, para que no rompa la física atravezando el piso
-			{
-				FuerzaVertical = 0;
-			}*/
-
 			EnPiso = true;
 			FuerzaVertical = 0;
 		}
@@ -33,10 +31,24 @@ public class Gravedad01 : MonoBehaviour
 		{
 			EnPiso = false;
 		}
-	}
+	}*/
 
 	void FixedUpdate()
 	{
+		RaycastHit Hit;
+		Ray Colision = new Ray(origenRayCast.transform.position, Vector3.down);
+		Debug.DrawRay(origenRayCast.transform.position, Vector3.down * distanciaRayCast);
+
+		if (Physics.Raycast(Colision, out Hit, distanciaRayCast, 9<<9)) // El "N° << N°" indica de qué layer a qué layer tiene en cuenta
+		{
+			EnPiso = true;
+			FuerzaVertical = 0;
+		}
+		else
+		{
+			EnPiso = false;
+		}
+
 		if (EnPiso == false)
 		{
 			EnAire ();
@@ -53,7 +65,7 @@ public class Gravedad01 : MonoBehaviour
 		}
 	}
 
-	void EnAire()
+	public void EnAire()
 	{
 		Contador += Time.deltaTime;
 
