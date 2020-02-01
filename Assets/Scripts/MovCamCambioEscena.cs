@@ -34,9 +34,10 @@ public class MovCamCambioEscena : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Personaje")
+        if (other.gameObject.transform.parent.name == "Personaje")
         {
             deboMoverme = true;
+            cantidadMovimiento = cantidadMovimiento * -1;
         }
     }
 
