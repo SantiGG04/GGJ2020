@@ -18,7 +18,7 @@ public class SaltoPersonaje01: MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.Space) && SaltosRestantes > 0 && Grav.EnPiso)
 		{
-			Debug.Log ("Salto");
+			//Debug.Log ("Salto");
 			Grav.FuerzaVertical = FuerzaSalto;
 			Grav.EnAire();
 			SaltosRestantes--;
