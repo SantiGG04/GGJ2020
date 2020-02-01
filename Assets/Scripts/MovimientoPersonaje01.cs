@@ -5,8 +5,11 @@ public class MovimientoPersonaje01 : MonoBehaviour
 
 {
     public float velocidadMovimiento;
+
 	public bool estoyPenalizado = false;
 	public float velocidadMovPenalizado;
+	public float duracionPenalizacion;
+	public float timer;
 
 
 	public GameObject origenRayCasts;
@@ -49,5 +52,20 @@ public class MovimientoPersonaje01 : MonoBehaviour
 			transform.Translate(velocidadMovimiento * Time.deltaTime, 0, 0);
 		if (Input.GetKey(KeyCode.LeftArrow) && lBloqueada == false && estoyPenalizado == false)
 			transform.Translate(-velocidadMovimiento * Time.deltaTime, 0, 0);
-    }
+
+		if (Input.GetKey(KeyCode.RightArrow) && rBloqueada == false && estoyPenalizado == true)
+			transform.Translate(velocidadMovPenalizado * Time.deltaTime, 0, 0);
+		if (Input.GetKey(KeyCode.LeftArrow) && lBloqueada == false && estoyPenalizado == true)
+			transform.Translate(-velocidadMovPenalizado * Time.deltaTime, 0, 0);
+		
+		if (timer >= 0.0f)
+		{
+			timer -= Time.deltaTime;
+		}
+		else if (timer <= 0.0f)
+		{
+			estoyPenalizado = false;
+			timer = 0.0f;
+		}
+	}
 }

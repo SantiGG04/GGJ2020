@@ -114,7 +114,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3236779177781368230}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.59, y: -0.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -136,7 +136,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidadMovimiento: 4
   estoyPenalizado: 0
-  velocidadMovPenalizado: 0
+  velocidadMovPenalizado: 2
+  duracionPenalizacion: 2
+  timer: 0
+  canCount: 0
   origenRayCasts: {fileID: 3236779178291890680}
   distanciaRayCastL: 0.51
   distanciaRayCastR: 0.51
@@ -202,6 +205,7 @@ GameObject:
   - component: {fileID: 3236779178291890672}
   - component: {fileID: 3236779178291890673}
   - component: {fileID: 3236779178291890687}
+  - component: {fileID: 892920700356694099}
   m_Layer: 8
   m_Name: Fisica
   m_TagString: Untagged
@@ -338,6 +342,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &892920700356694099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3236779178291890680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 197a82225d91fac44a8e02f2209f36b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movPj: {fileID: 3236779177781367899}
 --- !u!1 &3236779178363631032
 GameObject:
   m_ObjectHideFlags: 0
