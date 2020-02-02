@@ -45,6 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombrePieza: Tubo
   cantidadPieza: 0
+  cantidadMaxima: 1
 --- !u!1 &3236779176971906911
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombrePieza: Tuercas
   cantidadPieza: 0
+  cantidadMaxima: 1
 --- !u!1 &3236779177781368230
 GameObject:
   m_ObjectHideFlags: 0
@@ -144,6 +146,9 @@ MonoBehaviour:
   distanciaRayCastR: 0.51
   lBloqueada: 0
   rBloqueada: 0
+  layerParedes:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!1 &3236779178096866067
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,6 +194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombrePieza: Tornillos
   cantidadPieza: 0
+  cantidadMaxima: 1
 --- !u!1 &3236779178291890680
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,6 +316,9 @@ MonoBehaviour:
   Contador: 0
   origenRayCast: {fileID: 3236779178291890680}
   distanciaRayCast: 0.15
+  layerPiso:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!114 &3236779178291890673
 MonoBehaviour:
   m_ObjectHideFlags: 0

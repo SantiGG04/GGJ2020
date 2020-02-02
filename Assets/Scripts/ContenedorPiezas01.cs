@@ -6,4 +6,5 @@ public class ContenedorPiezas01 : MonoBehaviour
 {
     public string nombrePieza;
     public int cantidadPieza;
+    public int cantidadMaxima = 1;
 }

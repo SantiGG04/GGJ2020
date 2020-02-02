@@ -10,6 +10,7 @@ public class MovimientoEnemigos : MonoBehaviour
 
 	public float distanciaRayCastL;
 	public float distanciaRayCastR;
+	public LayerMask layerParedes;
 
 	void FixedUpdate()
 	{
@@ -21,12 +22,12 @@ public class MovimientoEnemigos : MonoBehaviour
 		Ray rColision = new Ray(origenRayCasts.transform.position, Vector3.right);
 		Debug.DrawRay(origenRayCasts.transform.position, Vector3.right * distanciaRayCastR);
 
-		if (Physics.Raycast(lColision, out lHit, distanciaRayCastL, 11 << 11))
+		if (Physics.Raycast(lColision, out lHit, distanciaRayCastL, layerParedes))
 		{
 			velocidadMovimiento *= -1;
 		}
 		
-		if  (Physics.Raycast(rColision, out rHit, distanciaRayCastR, 11 << 11))
+		if  (Physics.Raycast(rColision, out rHit, distanciaRayCastR, layerParedes))
 		{
 			velocidadMovimiento *= -1;
 		}

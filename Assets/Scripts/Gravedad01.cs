@@ -14,24 +14,8 @@ public class Gravedad01 : MonoBehaviour
 
 	public GameObject origenRayCast;
 	public float distanciaRayCast;
-	//public bool rBloqueada;
 
-	/*void OnCollisionStay(Collision col)
-	{
-		if (col.gameObject.layer == LayerMask.NameToLayer("Piso"))
-		{
-			EnPiso = true;
-			FuerzaVertical = 0;
-		}
-	}
-
-	void OnCollisionExit(Collision col)
-	{
-		if (col.gameObject.layer == LayerMask.NameToLayer("Piso"))
-		{
-			EnPiso = false;
-		}
-	}*/
+	public LayerMask layerPiso;
 
 	void FixedUpdate()
 	{
@@ -39,7 +23,7 @@ public class Gravedad01 : MonoBehaviour
 		Ray Colision = new Ray(origenRayCast.transform.position, Vector3.down);
 		Debug.DrawRay(origenRayCast.transform.position, Vector3.down * distanciaRayCast);
 
-		if (Physics.Raycast(Colision, out Hit, distanciaRayCast, 9<<9)) // El "N° << N°" indica de qué layer a qué layer tiene en cuenta
+		if (Physics.Raycast(Colision, out Hit, distanciaRayCast, layerPiso))
 		{
 			EnPiso = true;
 			FuerzaVertical = 0;
@@ -81,7 +65,7 @@ public class Gravedad01 : MonoBehaviour
 		if (Contador >= TiempoMinimoEnAire && EnPiso)
 		{
 			{
-				//FuerzaVertical = 0; //De momento lo saco porque ya lo hago en el OnCollisionStay
+				//FuerzaVertical = 0; //De momento lo saco porque ya lo hago en el RayCast
 				Contador = 0;
 			}
 		}
