@@ -8,10 +8,8 @@ public class DetectarColisionEnemigo : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        Debug.Log("No tan rapido", other.gameObject);
-        if (other.transform.gameObject.tag == "Boss"/*other.transform.parent.name == "Enemigo"*/)
+        if (other.transform.gameObject.tag == "Boss")
         {
-            Debug.Log("Está bien así?...");
             movPj.estoyPenalizado = true;
             movPj.timer = movPj.duracionPenalizacion;
         }
