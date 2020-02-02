@@ -7,13 +7,16 @@ public class Pieza02 : MonoBehaviour
     public string nombrePieza;
     public GameObject contenedor;
 
-    public void OnTriggerEnter()
+    public void OnTriggerEnter(Collider other)
     {
-        ContenedorPiezas01 cont = contenedor.GetComponent<ContenedorPiezas01>();
-        if (cont.cantidadPieza < cont.cantidadMaxima)
+        if (other.transform.gameObject.tag == "Player")
         {
-            cont.cantidadPieza++;
-            Destroy(gameObject);
+            ContenedorPiezas01 cont = contenedor.GetComponent<ContenedorPiezas01>();
+            if (cont.cantidadPieza < cont.cantidadMaxima)
+            {
+                cont.cantidadPieza++;
+                Destroy(gameObject);
+            }
         }
     }
 }
