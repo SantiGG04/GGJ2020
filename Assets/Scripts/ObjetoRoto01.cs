@@ -20,6 +20,8 @@ public class ObjetoRoto01 : MonoBehaviour
 
     public GameObject objetoFuncionando;
     public GameObject objetoRoto;
+    
+    public GameManager01 gameManager;
 
     public GameObject uIMision;
     public Text textoReloj;
@@ -62,6 +64,7 @@ public class ObjetoRoto01 : MonoBehaviour
             roto = true;
             if (errorEjecutado == false)
             {
+                gameManager.nivelDeRotura++;
                 gameObject.SendMessage("SistemaFallando");
                 errorEjecutado = true;
             }
