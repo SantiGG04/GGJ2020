@@ -369,6 +369,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 322367216465701516, guid: 1fc9ba730142cb7409df1118f1039477,
+        type: 3}
+      propertyPath: tiempoVictoria
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 322367216465701517, guid: 1fc9ba730142cb7409df1118f1039477,
         type: 3}
       propertyPath: m_Name
