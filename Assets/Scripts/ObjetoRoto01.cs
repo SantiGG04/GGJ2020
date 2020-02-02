@@ -18,6 +18,9 @@ public class ObjetoRoto01 : MonoBehaviour
     public GameObject tildePieza02;
     public GameObject tildePieza03;
 
+    public GameObject objetoFuncionando;
+    public GameObject objetoRoto;
+
     public GameObject uIMision;
     public Text textoReloj;
 
@@ -47,6 +50,8 @@ public class ObjetoRoto01 : MonoBehaviour
         {
             error = true;
             uIMision.SetActive(true);
+            objetoRoto.SetActive(true);
+            objetoFuncionando.SetActive(false);
             imagenObjetoRoto.gameObject.SetActive(true);
         }
 
@@ -101,6 +106,9 @@ public class ObjetoRoto01 : MonoBehaviour
                 imagenObjetoRoto.gameObject.SetActive(false);
                 tiempoParaError = tiempoParaErrorOriginal - tiempoDisminuidoError;
                 tiempoParaRomper = tiempoParaRomperOriginal - tiempoDisminuidoReparar;
+
+                objetoRoto.SetActive(false);
+                objetoFuncionando.SetActive(true);
 
                 tildePieza01.SetActive(false);
                 tildePieza02.SetActive(false);
