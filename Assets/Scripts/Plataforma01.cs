@@ -13,10 +13,7 @@ public class Plataforma01 : MonoBehaviour
 			Gravedad01 Grav = col.gameObject.GetComponentInChildren<Gravedad01>();
 			if (Grav.FuerzaVertical >= 0)
 			{
-				Debug.Log(Grav.FuerzaVertical);
 				Grav.FuerzaVertical += impulsoSalto;
-				Debug.Log(Grav.FuerzaVertical);
-
 				Grav.EnAire();
 			}
 		}

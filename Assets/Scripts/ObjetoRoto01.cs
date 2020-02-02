@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.UI;
+using UnityEngine.UI;
 
 public class ObjetoRoto01 : MonoBehaviour
 {
@@ -18,6 +18,9 @@ public class ObjetoRoto01 : MonoBehaviour
     public GameObject tildePieza02;
     public GameObject tildePieza03;
 
+    public GameObject uIMision;
+    public Text textoReloj;
+
     public bool error = false;
     public bool roto = false;
     public float tiempoParaErrorOriginal;
@@ -25,6 +28,9 @@ public class ObjetoRoto01 : MonoBehaviour
     public float tiempoParaRomperOriginal;
     public float tiempoParaRomper;
     public bool errorEjecutado;
+    public float tiempoDisminuidoError;
+    public float tiempoDisminuidoReparar;
+    public Image imagenObjetoRoto;
 
     public void Start()
     {
@@ -35,8 +41,14 @@ public class ObjetoRoto01 : MonoBehaviour
     public void Update()
     {
         tiempoParaError -= Time.deltaTime;
+        textoReloj.text = tiempoParaRomper.ToString("F"); ;
 
-        if (tiempoParaError <= 0 && error == false) error = true;
+        if (tiempoParaError <= 0 && error == false)
+        {
+            error = true;
+            uIMision.SetActive(true);
+            imagenObjetoRoto.gameObject.SetActive(true);
+        }
 
         if (error == true && roto == false) tiempoParaRomper -= Time.deltaTime;
 
@@ -85,8 +97,10 @@ public class ObjetoRoto01 : MonoBehaviour
             if (pieza01 == true && pieza02 == true && pieza03 == true)
             {
                 error = false;
-                tiempoParaError = tiempoParaErrorOriginal--;
-                tiempoParaRomper = tiempoParaRomperOriginal--;
+                uIMision.SetActive(false);
+                imagenObjetoRoto.gameObject.SetActive(false);
+                tiempoParaError = tiempoParaErrorOriginal - tiempoDisminuidoError;
+                tiempoParaRomper = tiempoParaRomperOriginal - tiempoDisminuidoReparar;
 
                 tildePieza01.SetActive(false);
                 tildePieza02.SetActive(false);

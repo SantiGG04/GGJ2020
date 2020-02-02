@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class CountDownTimer : MonoBehaviour
 {
     public Text txtCountDown;
-    public float timeQuest;
+
+    public GameObject objetoAsociado;
 
     private float timer;
     private bool canCount = true;
@@ -14,7 +15,8 @@ public class CountDownTimer : MonoBehaviour
 
     void OnEnable()
     {
-        timer = timeQuest;
+        ObjetoRoto01 obj = objetoAsociado.GetComponentInChildren<ObjetoRoto01>();
+        timer = obj.tiempoParaRomper;
     }
 
     void Update()
