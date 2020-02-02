@@ -26,6 +26,8 @@ public class Gravedad01 : MonoBehaviour
 		if (Physics.Raycast(Colision, out Hit, distanciaRayCast, layerPiso))
 		{
 			EnPiso = true;
+			Animator anim = gameObject.GetComponentInChildren<Animator>();
+			anim.SetBool("Jumping", false);
 			FuerzaVertical = 0;
 		}
 		else
@@ -51,6 +53,9 @@ public class Gravedad01 : MonoBehaviour
 
 	public void EnAire()
 	{
+		Animator anim = gameObject.GetComponentInChildren<Animator>();
+		anim.SetBool("Jumping", true);
+
 		Contador += Time.deltaTime;
 
 		transform.Translate(0, FuerzaVertical * Time.deltaTime, 0);

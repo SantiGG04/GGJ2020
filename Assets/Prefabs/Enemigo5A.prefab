@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 1168288656860166575}
   m_Layer: 10
   m_Name: Enemigo5A
-  m_TagString: Player
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 2035307107485189782}
   m_Layer: 10
   m_Name: Graficos
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -178,6 +178,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2035307107431018465}
     m_Modifications:
+    - target: {fileID: 1955784038861583823, guid: 184690db6ff2e674fbfe352fdf0ac06f,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7934573852076571556, guid: 184690db6ff2e674fbfe352fdf0ac06f,
         type: 3}
       propertyPath: m_Name

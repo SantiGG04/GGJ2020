@@ -50,15 +50,45 @@ public class MovimientoPersonaje01 : MonoBehaviour
 			rBloqueada = false;
 		}
 
-		if(Input.GetKey(KeyCode.RightArrow) && rBloqueada == false && estoyPenalizado == false)
+		if (Input.GetKey(KeyCode.RightArrow) && rBloqueada == false && estoyPenalizado == false)
+		{
+			SpriteRenderer rend = gameObject.GetComponentInChildren<SpriteRenderer>();
+			rend.flipX = true;
+			Animator anim = gameObject.GetComponentInChildren<Animator>();
+			anim.SetInteger("Velocidad", 1);
 			transform.Translate(velocidadMovimiento * Time.deltaTime, 0, 0);
+		}
 		if (Input.GetKey(KeyCode.LeftArrow) && lBloqueada == false && estoyPenalizado == false)
+		{
+			SpriteRenderer rend = gameObject.GetComponentInChildren<SpriteRenderer>();
+			rend.flipX = false;
+			Animator anim = gameObject.GetComponentInChildren<Animator>();
+			anim.SetInteger("Velocidad", 1);
 			transform.Translate(-velocidadMovimiento * Time.deltaTime, 0, 0);
+		}
 
 		if (Input.GetKey(KeyCode.RightArrow) && rBloqueada == false && estoyPenalizado == true)
+		{
+			SpriteRenderer rend = gameObject.GetComponentInChildren<SpriteRenderer>();
+			rend.flipX = true;
+			Animator anim = gameObject.GetComponentInChildren<Animator>();
+			anim.SetInteger("Velocidad", 1);
 			transform.Translate(velocidadMovPenalizado * Time.deltaTime, 0, 0);
+		}
 		if (Input.GetKey(KeyCode.LeftArrow) && lBloqueada == false && estoyPenalizado == true)
+		{
+			SpriteRenderer rend = gameObject.GetComponentInChildren<SpriteRenderer>();
+			rend.flipX = false;
+			Animator anim = gameObject.GetComponentInChildren<Animator>();
+			anim.SetInteger("Velocidad", 1);
 			transform.Translate(-velocidadMovPenalizado * Time.deltaTime, 0, 0);
+		}
+
+		if (Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.LeftArrow))
+		{
+			Animator anim = gameObject.GetComponentInChildren<Animator>();
+			anim.SetInteger("Velocidad", 0);
+		}
 		
 		if (timer >= 0.0f)
 		{

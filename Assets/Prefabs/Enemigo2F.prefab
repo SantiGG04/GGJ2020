@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 468576999690120064}
   m_Layer: 10
   m_Name: Enemigo2F
-  m_TagString: Player
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 759134835478205625}
   m_Layer: 10
   m_Name: Graficos
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -178,6 +178,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 759134835397033422}
     m_Modifications:
+    - target: {fileID: 1639875666024551491, guid: ed8851ef35e9074419fd1633aed4e106,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4028523129859780765, guid: ed8851ef35e9074419fd1633aed4e106,
         type: 3}
       propertyPath: m_Name
