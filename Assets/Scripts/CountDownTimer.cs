@@ -12,7 +12,7 @@ public class CountDownTimer : MonoBehaviour
     private bool canCount = true;
     private bool doOnce = false;
 
-    void Start()
+    void OnEnable()
     {
         timer = timeQuest;
     }
@@ -32,4 +32,5 @@ public class CountDownTimer : MonoBehaviour
             timer = 0.0f;
         }
     }
+
 }
