@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ca4211db18f0646bf7cce5b4998752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impulsoSalto: 5
+  impulsoSalto: 2
 --- !u!1 &1183757797570007715
 GameObject:
   m_ObjectHideFlags: 0
