@@ -16,7 +16,7 @@ public class MovCamCambioEscena : MonoBehaviour
     public float cantidadMovimiento; // Cuanto se mueve la Camara
 
     private bool deboMoverme = false;
-    private int contadorMovimientos = 0;
+    // private int contadorMovimientos = 0;
 
     void Update()
     {
