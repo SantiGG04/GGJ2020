@@ -1179,7 +1179,7 @@ GameObject:
   - component: {fileID: 7295653517420461321}
   - component: {fileID: 7295653517420461324}
   - component: {fileID: 7295653517420461325}
-  - component: {fileID: 7295653517420461326}
+  - component: {fileID: 8940462115389319637}
   m_Layer: 13
   m_Name: Cube
   m_TagString: Untagged
@@ -1268,7 +1268,7 @@ MonoBehaviour:
   tiempoDisminuidoError: 1
   tiempoDisminuidoReparar: 5
   imagenObjetoRoto: {fileID: 2597461809907691196}
---- !u!114 &7295653517420461326
+--- !u!114 &8940462115389319637
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -71,54 +71,62 @@ public class ObjetoRoto01 : MonoBehaviour
         }
     }
 
-    public void OnTriggerEnter()
+    public void OnTriggerEnter(Collider col)
     {
-        if (error == true && roto == false)
+        if (col.gameObject.transform.parent.name == "Personaje")
         {
-            ContenedorPiezas01 cont01 = contenedorPieza01.GetComponentInChildren<ContenedorPiezas01>();
-            if (cont01.cantidadPieza > 0 && pieza01 == false)
+            Debug.Log(col.gameObject.transform.parent.name);
+            if (error == true && roto == false)
             {
-                cont01.cantidadPieza--;
-                pieza01 = true;
-            }
+                ContenedorPiezas01 cont01 = contenedorPieza01.GetComponentInChildren<ContenedorPiezas01>();
+                if (cont01.cantidadPieza > 0 && pieza01 == false)
+                {
+                    cont01.cantidadPieza--;
+                    pieza01 = true;
+                }
 
-            if (pieza01 == true) tildePieza01.SetActive(true);
+                if (pieza01 == true) tildePieza01.SetActive(true);
 
-            ContenedorPiezas01 cont02 = contenedorPieza02.GetComponentInChildren<ContenedorPiezas01>();
-            if (cont02.cantidadPieza > 0 && pieza02 == false)
-            {
-                cont02.cantidadPieza--;
-                pieza02 = true;
-            }
+                ContenedorPiezas01 cont02 = contenedorPieza02.GetComponentInChildren<ContenedorPiezas01>();
+                if (cont02.cantidadPieza > 0 && pieza02 == false)
+                {
+                    cont02.cantidadPieza--;
+                    pieza02 = true;
+                }
 
-            if (pieza02 == true) tildePieza02.SetActive(true);
+                if (pieza02 == true) tildePieza02.SetActive(true);
 
-            ContenedorPiezas01 cont03 = contenedorPieza03.GetComponentInChildren<ContenedorPiezas01>();
-            if (cont03.cantidadPieza > 0 && pieza03 == false)
-            {
-                cont03.cantidadPieza--;
-                pieza03 = true;
-            }
+                ContenedorPiezas01 cont03 = contenedorPieza03.GetComponentInChildren<ContenedorPiezas01>();
+                if (cont03.cantidadPieza > 0 && pieza03 == false)
+                {
+                    cont03.cantidadPieza--;
+                    pieza03 = true;
+                }
 
-            if (pieza03 == true) tildePieza03.SetActive(true);
+                if (pieza03 == true) tildePieza03.SetActive(true);
 
-            if (pieza01 == true && pieza02 == true && pieza03 == true)
-            {
-                error = false;
-                uIMision.SetActive(false);
-                imagenObjetoRoto.gameObject.SetActive(false);
-                tiempoParaError = tiempoParaErrorOriginal - tiempoDisminuidoError;
-                tiempoParaRomper = tiempoParaRomperOriginal - tiempoDisminuidoReparar;
+                if (pieza01 == true && pieza02 == true && pieza03 == true)
+                {
+                    error = false;
+                    uIMision.SetActive(false);
+                    imagenObjetoRoto.gameObject.SetActive(false);
+                    tiempoParaError = tiempoParaErrorOriginal - tiempoDisminuidoError;
+                    tiempoParaRomper = tiempoParaRomperOriginal - tiempoDisminuidoReparar;
 
-                objetoRoto.SetActive(false);
-                objetoFuncionando.SetActive(true);
+                    objetoRoto.SetActive(false);
+                    objetoFuncionando.SetActive(true);
 
-                tildePieza01.SetActive(false);
-                tildePieza02.SetActive(false);
-                tildePieza03.SetActive(false);
-            }
+                    /*pieza01 = false; //Probando!!
+                    pieza02 = false; //Probando!!
+                    pieza03 = false; //Probando!!*/
+
+                    tildePieza01.SetActive(false);
+                    tildePieza02.SetActive(false);
+                    tildePieza03.SetActive(false);
+                }
 
                 Cartel.SetActive(true);
+            }
         }
     }
 

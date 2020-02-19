@@ -7,6 +7,8 @@ public class MovimientoPersonaje01 : MonoBehaviour
     public float velocidadMovimientoOriginal;
     public float velocidadMovimientoActual;
 
+    public float modificadorDireccion;
+
 	public bool estoyPenalizado = false;
 	public float velocidadMovPenalizado;
 	public float duracionPenalizacion;
@@ -75,7 +77,7 @@ public class MovimientoPersonaje01 : MonoBehaviour
 			rend.flipX = true;
 			Animator anim = gameObject.GetComponentInChildren<Animator>();
 			anim.SetInteger("Velocidad", 1);
-			transform.Translate(velocidadMovimientoActual * Time.deltaTime, 0, 0);
+			transform.Translate((velocidadMovimientoActual * modificadorDireccion) * Time.deltaTime, 0, 0);
 		}
 		if (Input.GetKey(KeyCode.LeftArrow) && lBloqueada == false)
 		{
@@ -83,25 +85,8 @@ public class MovimientoPersonaje01 : MonoBehaviour
 			rend.flipX = false;
 			Animator anim = gameObject.GetComponentInChildren<Animator>();
 			anim.SetInteger("Velocidad", 1);
-			transform.Translate(-velocidadMovimientoActual * Time.deltaTime, 0, 0);
+			transform.Translate((-velocidadMovimientoActual * modificadorDireccion) * Time.deltaTime, 0, 0);
 		}
-
-		/*if (Input.GetKey(KeyCode.RightArrow) && rBloqueada == false)
-		{
-			SpriteRenderer rend = gameObject.GetComponentInChildren<SpriteRenderer>();
-			rend.flipX = true;
-			Animator anim = gameObject.GetComponentInChildren<Animator>();
-			anim.SetInteger("Velocidad", 1);
-			transform.Translate(velocidadMovPenalizado * Time.deltaTime, 0, 0);
-		}
-		if (Input.GetKey(KeyCode.LeftArrow) && lBloqueada == false)
-		{
-			SpriteRenderer rend = gameObject.GetComponentInChildren<SpriteRenderer>();
-			rend.flipX = false;
-			Animator anim = gameObject.GetComponentInChildren<Animator>();
-			anim.SetInteger("Velocidad", 1);
-			transform.Translate(-velocidadMovPenalizado * Time.deltaTime, 0, 0);
-		}*/
 
 		if (Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.LeftArrow))
 		{
