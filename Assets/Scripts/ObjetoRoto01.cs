@@ -37,10 +37,21 @@ public class ObjetoRoto01 : MonoBehaviour
     public float tiempoDisminuidoReparar;
     public Image imagenObjetoRoto;
 
+    // Variables de Sonido
+    [Header("Variables de Sonido")]
+    public GameObject contendedorSonidoError;
+    public GameObject contendedorSonidoRota;
+    public GameObject contendedorSonidoArreglando;
+
     public void Start()
     {
         tiempoParaError = tiempoParaErrorOriginal;
         tiempoParaRomper = tiempoParaRomperOriginal;
+
+        // Inicializacion de Sonidos en false, para que no suenen si nos los olvidamos habilitados
+        contendedorSonidoError.SetActive(false);
+        contendedorSonidoRota.SetActive(false);
+        contendedorSonidoArreglando.SetActive(false);
     }
 
     public void Update()
@@ -51,6 +62,8 @@ public class ObjetoRoto01 : MonoBehaviour
         if (tiempoParaError <= 0 && error == false)
         {
             error = true;
+            contendedorSonidoError.SetActive(false); // Primero se deshabilita, ya que luego de que suene por primera vez hay que dejarlo habilitado para que termine el sonido
+            contendedorSonidoError.SetActive(true); // Habilitamos el contenedor para que suenen los sonidos que contiene
             uIMision.SetActive(true);
             objetoRoto.SetActive(true);
             objetoFuncionando.SetActive(false);
@@ -64,6 +77,8 @@ public class ObjetoRoto01 : MonoBehaviour
             roto = true;
             if (errorEjecutado == false)
             {
+                contendedorSonidoRota.SetActive(false); // Primero se deshabilita, ya que luego de que suene por primera vez hay que dejarlo habilitado para que termine el sonido
+                contendedorSonidoRota.SetActive(true); // Habilitamos el contenedor para que suenen los sonidos que contiene
                 gameManager.nivelDeRotura++;
                 gameObject.SendMessage("SistemaFallando");
                 errorEjecutado = true;
@@ -108,6 +123,8 @@ public class ObjetoRoto01 : MonoBehaviour
                 if (pieza01 == true && pieza02 == true && pieza03 == true)
                 {
                     error = false;
+                    contendedorSonidoArreglando.SetActive(false); // Primero se deshabilita, ya que luego de que suene por primera vez hay que dejarlo habilitado para que termine el sonido
+                    contendedorSonidoArreglando.SetActive(true); // Habilitamos el contenedor para que suenen los sonidos que contiene
                     uIMision.SetActive(false);
                     imagenObjetoRoto.gameObject.SetActive(false);
                     tiempoParaError = tiempoParaErrorOriginal - tiempoDisminuidoError;
