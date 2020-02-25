@@ -1103,7 +1103,7 @@ MonoBehaviour:
   SaltosRestantes: 1
   FuerzaSalto: 8
   SaltosMultiples: 1
-  contendedorSonidoSalto: {fileID: 3373854296454138639}
+  contendedorSonidoSaltando: {fileID: 3373854296454138639}
 --- !u!54 &3236779178291890687
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1133,6 +1133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movPj: {fileID: 3236779177781367899}
+  contendedorSonidoContactoEnemigo: {fileID: 4970557206623760712}
 --- !u!114 &44993032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1496,6 +1497,12 @@ Transform:
 --- !u!1 &3373854296454138639 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3740089975248031850, guid: 74b51ec831e769345b0445aa05aef71c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2104639662151408485}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4970557206623760712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6471630808165296685, guid: 74b51ec831e769345b0445aa05aef71c,
     type: 3}
   m_PrefabInstance: {fileID: 2104639662151408485}
   m_PrefabAsset: {fileID: 0}

@@ -121,18 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &20166176 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3438109610836135953, guid: 80ebd10349b6d21498ade840fd50b57a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1764641828}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &92993928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -805,11 +793,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3236779177781367899, guid: 0ea7212f2fb9abe4e9cbd78cd3265de9,
-        type: 3}
-      propertyPath: modificadorDireccion
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3236779177781368230, guid: 0ea7212f2fb9abe4e9cbd78cd3265de9,
         type: 3}
@@ -3692,12 +3675,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2706095035911458261}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1623653310 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3438109611403231800, guid: 80ebd10349b6d21498ade840fd50b57a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1764641828}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1626971635 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7371850466833413008, guid: 2d2cf693ebc2e724f9e854e7549e8734,
@@ -4741,36 +4718,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7295653517420461325, guid: e69040b05c1e2d340ba8e789a035d90d,
-        type: 3}
-      propertyPath: contenedorPieza01
-      value: 
-      objectReference: {fileID: 1515237499}
-    - target: {fileID: 7295653517420461325, guid: e69040b05c1e2d340ba8e789a035d90d,
-        type: 3}
-      propertyPath: contenedorPieza02
-      value: 
-      objectReference: {fileID: 354074607}
-    - target: {fileID: 7295653517420461325, guid: e69040b05c1e2d340ba8e789a035d90d,
-        type: 3}
-      propertyPath: contenedorPieza03
-      value: 
-      objectReference: {fileID: 1215649532}
-    - target: {fileID: 7295653517420461325, guid: e69040b05c1e2d340ba8e789a035d90d,
-        type: 3}
-      propertyPath: gameManager
-      value: 
-      objectReference: {fileID: 2136640261}
-    - target: {fileID: 7295653517420461325, guid: e69040b05c1e2d340ba8e789a035d90d,
-        type: 3}
-      propertyPath: uIMision
-      value: 
-      objectReference: {fileID: 1623653310}
-    - target: {fileID: 7295653517420461325, guid: e69040b05c1e2d340ba8e789a035d90d,
-        type: 3}
-      propertyPath: textoReloj
-      value: 
-      objectReference: {fileID: 20166176}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e69040b05c1e2d340ba8e789a035d90d, type: 3}
 --- !u!1001 &1872515499
@@ -5142,6 +5089,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867433678093905881, guid: 1fc9ba730142cb7409df1118f1039477,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7444038015282199523, guid: 1fc9ba730142cb7409df1118f1039477,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fc9ba730142cb7409df1118f1039477, type: 3}
@@ -5573,6 +5530,11 @@ PrefabInstance:
       objectReference: {fileID: 347865922}
     - target: {fileID: 8677151567665678839, guid: 4e4114b5039aa2b4fb778a277e90909b,
         type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 2136640261}
+    - target: {fileID: 8677151567665678839, guid: 4e4114b5039aa2b4fb778a277e90909b,
+        type: 3}
       propertyPath: uIMision
       value: 
       objectReference: {fileID: 1776433322}
@@ -5581,21 +5543,6 @@ PrefabInstance:
       propertyPath: textoReloj
       value: 
       objectReference: {fileID: 975533437}
-    - target: {fileID: 8677151567665678839, guid: 4e4114b5039aa2b4fb778a277e90909b,
-        type: 3}
-      propertyPath: gameManager
-      value: 
-      objectReference: {fileID: 2136640261}
-    - target: {fileID: 8677151567665678839, guid: 4e4114b5039aa2b4fb778a277e90909b,
-        type: 3}
-      propertyPath: tiempoParaErrorOriginal
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 8677151567665678839, guid: 4e4114b5039aa2b4fb778a277e90909b,
-        type: 3}
-      propertyPath: tiempoParaRomperOriginal
-      value: 30
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e4114b5039aa2b4fb778a277e90909b, type: 3}
 --- !u!1001 &2603767738171777867
@@ -5695,16 +5642,6 @@ PrefabInstance:
       propertyPath: textoReloj
       value: 
       objectReference: {fileID: 663599257}
-    - target: {fileID: 817695932155714026, guid: adacd99eb9ef3794ba5aceed543312ee,
-        type: 3}
-      propertyPath: tiempoParaErrorOriginal
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 817695932155714026, guid: adacd99eb9ef3794ba5aceed543312ee,
-        type: 3}
-      propertyPath: tiempoParaRomperOriginal
-      value: 30
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adacd99eb9ef3794ba5aceed543312ee, type: 3}
 --- !u!1001 &2706095035911458261
@@ -5871,6 +5808,11 @@ PrefabInstance:
       objectReference: {fileID: 1305135078}
     - target: {fileID: 3277965888534324456, guid: 59d11e9b1db4bf84a9dcbe78e48846f8,
         type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 2136640261}
+    - target: {fileID: 3277965888534324456, guid: 59d11e9b1db4bf84a9dcbe78e48846f8,
+        type: 3}
       propertyPath: uIMision
       value: 
       objectReference: {fileID: 417225250}
@@ -5879,16 +5821,6 @@ PrefabInstance:
       propertyPath: textoReloj
       value: 
       objectReference: {fileID: 1091733290}
-    - target: {fileID: 3277965888534324456, guid: 59d11e9b1db4bf84a9dcbe78e48846f8,
-        type: 3}
-      propertyPath: gameManager
-      value: 
-      objectReference: {fileID: 2136640261}
-    - target: {fileID: 3277965888534324456, guid: 59d11e9b1db4bf84a9dcbe78e48846f8,
-        type: 3}
-      propertyPath: tiempoParaRomperOriginal
-      value: 40
-      objectReference: {fileID: 0}
     - target: {fileID: 6131303426564509707, guid: 59d11e9b1db4bf84a9dcbe78e48846f8,
         type: 3}
       propertyPath: miniMapa
