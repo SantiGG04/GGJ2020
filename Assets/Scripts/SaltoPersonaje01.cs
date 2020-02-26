@@ -33,12 +33,16 @@ public class SaltoPersonaje01: MonoBehaviour
 			contendedorSonidoSaltando.SetActive(false); // Primero se deshabilita, ya que luego de que suene por primera vez hay que dejarlo habilitado para que termine el sonido
 			contendedorSonidoSaltando.SetActive(true); // Habilitamos el contenedor para que suenen los sonidos que contiene
 			Grav.EnAire();
+			Animator anim = gameObject.GetComponentInChildren<Animator>();
+			anim.SetBool("Jumping", true);
 			SaltosRestantes--;
 			//Coll.isTrigger = true;// Sólo usar si en el código Gravedad01, en la función EnAire, dejamos la parte que anula el Trigger cuando el personaje está ascendiendo
 		}
 
 		if (Grav.EnPiso)
 		{
+			Animator anim = gameObject.GetComponentInChildren<Animator>();
+			anim.SetBool("Jumping", false);
 			SaltosRestantes = SaltosMultiples;
 		}
 	}
