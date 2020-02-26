@@ -51,7 +51,7 @@ public class GameManager01 : MonoBehaviour
         else if (nivelDeRotura == 2)
         {
             audioGameA.volume = 0.0f;
-            audioGameB.volume = 1.0f;
+            audioGameB.volume = 0.5f;
         }
         else if (nivelDeRotura == 1)
         {
@@ -60,7 +60,7 @@ public class GameManager01 : MonoBehaviour
         }
         else if (nivelDeRotura == 0)
         {
-            audioGameA.volume = 1.0f;
+            audioGameA.volume = 0.5f;
             audioGameB.volume = 0.0f;
         }
     }
