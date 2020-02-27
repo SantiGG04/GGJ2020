@@ -88,8 +88,8 @@ public class ObjetoRoto01 : MonoBehaviour
 
     public void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.transform.parent.name == "Personaje")
-        {
+        //if (col.gameObject.transform.parent.name == "Personaje")
+        ///{
             Debug.Log(col.gameObject.transform.parent.name);
             if (error == true && roto == false)
             {
@@ -144,7 +144,7 @@ public class ObjetoRoto01 : MonoBehaviour
 
                 Cartel.SetActive(true);
             }
-        }
+        //}
     }
 
     public void OnTriggerExit()

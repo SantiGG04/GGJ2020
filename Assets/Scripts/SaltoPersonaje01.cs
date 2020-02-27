@@ -21,7 +21,7 @@ public class SaltoPersonaje01: MonoBehaviour
 		contendedorSonidoSaltando.SetActive(false);
 	}
 
-	void FixedUpdate()
+	void Update()
 	{
 		Gravedad01 Grav = gameObject.GetComponentInChildren<Gravedad01> ();
 		//BoxCollider Coll = gameObject.GetComponentInChildren<BoxCollider> ();// Sólo usar si en el código Gravedad01, en la función EnAire, dejamos la parte que anula el Trigger cuando el personaje está ascendiendo
