@@ -9835,7 +9835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &60536587
 Transform:
   m_ObjectHideFlags: 0
@@ -9939,8 +9939,8 @@ ParticleSystem:
   useRigidbodyForVelocity: 1
   startDelay:
     serializedVersion: 2
-    minMaxState: 0
-    scalar: 0.55
+    minMaxState: 3
+    scalar: 5
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -14764,8 +14764,8 @@ ParticleSystem:
   useRigidbodyForVelocity: 1
   startDelay:
     serializedVersion: 2
-    minMaxState: 0
-    scalar: 0.2
+    minMaxState: 3
+    scalar: 5
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -24531,8 +24531,8 @@ ParticleSystem:
   useRigidbodyForVelocity: 1
   startDelay:
     serializedVersion: 2
-    minMaxState: 0
-    scalar: 0.58
+    minMaxState: 3
+    scalar: 5
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -49115,8 +49115,8 @@ ParticleSystem:
   useRigidbodyForVelocity: 1
   startDelay:
     serializedVersion: 2
-    minMaxState: 0
-    scalar: 0.5
+    minMaxState: 3
+    scalar: 5
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -82708,7 +82708,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &1255698629
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -82795,8 +82795,8 @@ ParticleSystem:
   useRigidbodyForVelocity: 1
   startDelay:
     serializedVersion: 2
-    minMaxState: 0
-    scalar: 0
+    minMaxState: 3
+    scalar: 5
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -87533,7 +87533,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1431591421
 Transform:
   m_ObjectHideFlags: 0
@@ -87637,8 +87637,8 @@ ParticleSystem:
   useRigidbodyForVelocity: 1
   startDelay:
     serializedVersion: 2
-    minMaxState: 0
-    scalar: 0.65
+    minMaxState: 3
+    scalar: 5
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -135836,8 +135836,8 @@ ParticleSystem:
   useRigidbodyForVelocity: 1
   startDelay:
     serializedVersion: 2
-    minMaxState: 0
-    scalar: 0.1
+    minMaxState: 3
+    scalar: 5
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -140661,8 +140661,8 @@ ParticleSystem:
   useRigidbodyForVelocity: 1
   startDelay:
     serializedVersion: 2
-    minMaxState: 0
-    scalar: 0.6
+    minMaxState: 3
+    scalar: 5
     minScalar: 0
     maxCurve:
       serializedVersion: 2
