@@ -64,14 +64,15 @@ public class ObjetoRoto01 : MonoBehaviour
         contendedorSonidoError.SetActive(false);
         contendedorSonidoRota.SetActive(false);
         contendedorSonidoArreglando.SetActive(false);
+
+        // Inicializacion del Color del Titulo de la Quest
         txtTitle.color = Color.green;
     }
 
     public void Update()
     {
         tiempoParaError -= Time.deltaTime;
-        //textoReloj.text = tiempoParaRomper.ToString("F"); // Esta línea la cambié de lugar, para poder poner un mensaje de ERROR cuando se rompe la Máquina (en cuanto veas el mensaje y confirmes que no la necesitas acá para algo, borrala)
-
+        
         if (tiempoParaError <= 0 && error == false)
         {
             error = true;
@@ -90,7 +91,7 @@ public class ObjetoRoto01 : MonoBehaviour
 
             if (tiempoParaRomper <= (tiempoParaRomperReal/2))
             {
-                txtTitle.color = Color.yellow;
+                txtTitle.color = Color.yellow; // Cambia el Color del Titulo de la Quest a Amarillo porque ya paso la mitad del tiempo que tiene para reparar
             }
         }
 
@@ -104,9 +105,9 @@ public class ObjetoRoto01 : MonoBehaviour
                 gameManager.nivelDeRotura++;
                 gameObject.SendMessage("SistemaFallando");
                 errorEjecutado = true;
-                textoReloj.text = ">>> ERROR <<<";
-                textoReloj.color = Color.red;
-                txtTitle.color = Color.red;
+                textoReloj.text = ">>> ERROR <<<"; // Se acabo el tiempo, así que en el TIMER aparece este mensaje de ERROR
+                textoReloj.color = Color.red; // Se acabo el tiempo, así que el Color del Texto del TIMER para a Rojo
+                txtTitle.color = Color.red; // Se acabo el tiempo, así que el Color del Titulo pasa a Rojo
             }
         }
     }
@@ -154,9 +155,9 @@ public class ObjetoRoto01 : MonoBehaviour
                     imagenObjetoRoto.gameObject.SetActive(false);
                     tiempoParaError = tiempoParaErrorOriginal - tiempoDisminuidoError;
                     tiempoParaRomper = tiempoParaRomperOriginal - tiempoDisminuidoReparar;
-                    tiempoParaErrorReal = tiempoParaError;
-                    tiempoParaRomperReal = tiempoParaRomper;
-                    txtTitle.color = Color.green;
+                    tiempoParaErrorReal = tiempoParaError; // Actualizo el Tiempo Real que pasa hasta que se genere el Error
+                    tiempoParaRomperReal = tiempoParaRomper; // Actualizo el Tiempo Real que tiene hasta que se Rompe
+                    txtTitle.color = Color.green; // Ya arregló la máquina, así que volvemos a inicializar el Color del Titulo en Verde
 
 
                 objetoRoto.SetActive(false);
