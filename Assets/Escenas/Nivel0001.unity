@@ -178,6 +178,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 279e5ef323c611d4e9ee2bec26c2a0b9, type: 3}
+--- !u!114 &110808853 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3438109610246013080, guid: 80ebd10349b6d21498ade840fd50b57a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1764641828}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &122452814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1511,6 +1523,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1764641828}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &841233910 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3438109612319160842, guid: 80ebd10349b6d21498ade840fd50b57a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1764641828}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &894414019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3800,6 +3824,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e4710df422a0c242b42c15ed3b85bef, type: 3}
+--- !u!114 &1803249501 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3438109610685074297, guid: 80ebd10349b6d21498ade840fd50b57a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1764641828}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1813794524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4055,6 +4091,11 @@ PrefabInstance:
       propertyPath: textoReloj
       value: 
       objectReference: {fileID: 2139601996}
+    - target: {fileID: 7295653517420461325, guid: e69040b05c1e2d340ba8e789a035d90d,
+        type: 3}
+      propertyPath: txtTitle
+      value: 
+      objectReference: {fileID: 841233910}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e69040b05c1e2d340ba8e789a035d90d, type: 3}
 --- !u!1001 &1872515499
@@ -4439,6 +4480,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66ade05e9885bb642b3b226ff59354f3, type: 3}
+--- !u!114 &1980380636 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1195153460, guid: 80ebd10349b6d21498ade840fd50b57a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1764641828}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2049704963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4966,6 +5019,11 @@ PrefabInstance:
       propertyPath: textoReloj
       value: 
       objectReference: {fileID: 1091733290}
+    - target: {fileID: 8677151567665678839, guid: 4e4114b5039aa2b4fb778a277e90909b,
+        type: 3}
+      propertyPath: txtTitle
+      value: 
+      objectReference: {fileID: 110808853}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e4114b5039aa2b4fb778a277e90909b, type: 3}
 --- !u!1001 &2603767738171777867
@@ -5065,6 +5123,11 @@ PrefabInstance:
       propertyPath: textoReloj
       value: 
       objectReference: {fileID: 663599257}
+    - target: {fileID: 817695932155714026, guid: adacd99eb9ef3794ba5aceed543312ee,
+        type: 3}
+      propertyPath: txtTitle
+      value: 
+      objectReference: {fileID: 1980380636}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adacd99eb9ef3794ba5aceed543312ee, type: 3}
 --- !u!1001 &2706095035911458261
@@ -5244,6 +5307,11 @@ PrefabInstance:
       propertyPath: textoReloj
       value: 
       objectReference: {fileID: 1091733290}
+    - target: {fileID: 3277965888534324456, guid: 59d11e9b1db4bf84a9dcbe78e48846f8,
+        type: 3}
+      propertyPath: txtTitle
+      value: 
+      objectReference: {fileID: 1803249501}
     - target: {fileID: 6131303426564509707, guid: 59d11e9b1db4bf84a9dcbe78e48846f8,
         type: 3}
       propertyPath: miniMapa

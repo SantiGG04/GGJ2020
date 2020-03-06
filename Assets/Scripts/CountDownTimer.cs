@@ -17,6 +17,7 @@ public class CountDownTimer : MonoBehaviour
     {
         ObjetoRoto01 obj = objetoAsociado.GetComponentInChildren<ObjetoRoto01>();
         timer = obj.tiempoParaRomper;
+        //textoTitulo.color = new Color(0, 255, 0, 255);
     }
 
     void Update()

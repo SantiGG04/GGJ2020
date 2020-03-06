@@ -37,6 +37,10 @@ public class ObjetoRoto01 : MonoBehaviour
     public float tiempoDisminuidoReparar;
     public Image imagenObjetoRoto;
 
+    // Variables Canvas Quest
+    [Header("Variables de QuestCanvas")]
+    public Text txtTitle;
+
     // Variables de Sonido
     [Header("Variables de Sonido")]
     public GameObject contendedorSonidoError;
@@ -52,12 +56,13 @@ public class ObjetoRoto01 : MonoBehaviour
         contendedorSonidoError.SetActive(false);
         contendedorSonidoRota.SetActive(false);
         contendedorSonidoArreglando.SetActive(false);
+        txtTitle.color = new Color(0, 255, 0);
     }
 
     public void Update()
     {
         tiempoParaError -= Time.deltaTime;
-        textoReloj.text = tiempoParaRomper.ToString("F"); ;
+        //textoReloj.text = tiempoParaRomper.ToString("F"); // Esta línea la cambié de lugar, para poder poner un mensaje de ERROR cuando se rompe la Máquina (en cuanto veas el mensaje y confirmes que no la necesitas acá para algo, borrala)
 
         if (tiempoParaError <= 0 && error == false)
         {
@@ -70,7 +75,16 @@ public class ObjetoRoto01 : MonoBehaviour
             imagenObjetoRoto.gameObject.SetActive(true);
         }
 
-        if (error == true && roto == false) tiempoParaRomper -= Time.deltaTime;
+        if (error == true && roto == false)
+        {
+            tiempoParaRomper -= Time.deltaTime;
+            textoReloj.text = tiempoParaRomper.ToString("F");
+
+            if (tiempoParaRomper <= (tiempoParaRomperOriginal/2))
+            {
+                txtTitle.color = new Color(255, 255, 0);
+            }
+        }
 
         if (tiempoParaRomper <= 0)
         {
@@ -82,6 +96,9 @@ public class ObjetoRoto01 : MonoBehaviour
                 gameManager.nivelDeRotura++;
                 gameObject.SendMessage("SistemaFallando");
                 errorEjecutado = true;
+                textoReloj.text = ">>> ERROR <<<";
+                textoReloj.color = Color.red;
+                txtTitle.color = new Color(255, 0, 0);
             }
         }
     }

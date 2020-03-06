@@ -327,6 +327,7 @@ MonoBehaviour:
   tiempoDisminuidoError: 1
   tiempoDisminuidoReparar: 15
   imagenObjetoRoto: {fileID: 8762899354449239684}
+  txtTitle: {fileID: 0}
   contendedorSonidoError: {fileID: 5084730453521708311}
   contendedorSonidoRota: {fileID: 5903672265396062980}
   contendedorSonidoArreglando: {fileID: 952470804306986956}
