@@ -51,10 +51,14 @@ public class ObjetoRoto01 : MonoBehaviour
 
     public void Start()
     {
+        // Inicializacion de Timers
         tiempoParaError = tiempoParaErrorOriginal;
         tiempoParaRomper = tiempoParaRomperOriginal;
         tiempoParaErrorReal = tiempoParaError;
         tiempoParaRomperReal = tiempoParaRomper;
+
+        // Busca el GameManager
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager01>();
 
         // Inicializacion de Sonidos en false, para que no suenen si nos los olvidamos habilitados
         contendedorSonidoError.SetActive(false);
