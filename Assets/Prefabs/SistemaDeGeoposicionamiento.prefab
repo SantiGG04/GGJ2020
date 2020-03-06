@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37296b9086fe4b4488a8c6dafe146ab4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sistemaDe: Gravedad
+  sistemaDe: Geoposicionamiento
   Cartel: {fileID: 3277965889125541485}
   contenedorPieza01: {fileID: 0}
   contenedorPieza02: {fileID: 0}
@@ -320,8 +320,10 @@ MonoBehaviour:
   error: 0
   roto: 0
   tiempoParaErrorOriginal: 50
+  tiempoParaErrorReal: 0
   tiempoParaError: 0
   tiempoParaRomperOriginal: 40
+  tiempoParaRomperReal: 0
   tiempoParaRomper: 0
   errorEjecutado: 0
   tiempoDisminuidoError: 1

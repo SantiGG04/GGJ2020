@@ -779,8 +779,10 @@ MonoBehaviour:
   error: 0
   roto: 0
   tiempoParaErrorOriginal: 10
+  tiempoParaErrorReal: 0
   tiempoParaError: 0
   tiempoParaRomperOriginal: 35
+  tiempoParaRomperReal: 0
   tiempoParaRomper: 0
   errorEjecutado: 0
   tiempoDisminuidoError: 1

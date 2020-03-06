@@ -259,8 +259,10 @@ MonoBehaviour:
   error: 0
   roto: 0
   tiempoParaErrorOriginal: 30
+  tiempoParaErrorReal: 0
   tiempoParaError: 0
   tiempoParaRomperOriginal: 30
+  tiempoParaRomperReal: 0
   tiempoParaRomper: 0
   errorEjecutado: 0
   tiempoDisminuidoError: 1

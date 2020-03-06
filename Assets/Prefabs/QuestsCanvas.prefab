@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 833620126}
   - component: {fileID: 833620125}
   m_Layer: 5
-  m_Name: Quest04
+  m_Name: QuestMacWire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -712,7 +712,7 @@ GameObject:
   - component: {fileID: 3438109610540142100}
   - component: {fileID: 1776433325}
   m_Layer: 5
-  m_Name: Quest02
+  m_Name: QuestSeguridad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1120,7 +1120,7 @@ GameObject:
   - component: {fileID: 3438109611403231806}
   - component: {fileID: 1623653313}
   m_Layer: 5
-  m_Name: Quest01
+  m_Name: QuestGravedad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1186,7 +1186,7 @@ GameObject:
   - component: {fileID: 3438109611441464145}
   - component: {fileID: 417225253}
   m_Layer: 5
-  m_Name: Quest03
+  m_Name: QuestGeoposicionamiento
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

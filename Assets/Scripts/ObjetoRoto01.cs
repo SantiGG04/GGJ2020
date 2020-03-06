@@ -29,8 +29,10 @@ public class ObjetoRoto01 : MonoBehaviour
     public bool error = false;
     public bool roto = false;
     public float tiempoParaErrorOriginal;
+    public float tiempoParaErrorReal;
     public float tiempoParaError;
     public float tiempoParaRomperOriginal;
+    public float tiempoParaRomperReal;
     public float tiempoParaRomper;
     public bool errorEjecutado;
     public float tiempoDisminuidoError;
@@ -51,12 +53,14 @@ public class ObjetoRoto01 : MonoBehaviour
     {
         tiempoParaError = tiempoParaErrorOriginal;
         tiempoParaRomper = tiempoParaRomperOriginal;
+        tiempoParaErrorReal = tiempoParaError;
+        tiempoParaRomperReal = tiempoParaRomper;
 
         // Inicializacion de Sonidos en false, para que no suenen si nos los olvidamos habilitados
         contendedorSonidoError.SetActive(false);
         contendedorSonidoRota.SetActive(false);
         contendedorSonidoArreglando.SetActive(false);
-        txtTitle.color = new Color(0, 255, 0);
+        txtTitle.color = Color.green;
     }
 
     public void Update()
@@ -80,9 +84,9 @@ public class ObjetoRoto01 : MonoBehaviour
             tiempoParaRomper -= Time.deltaTime;
             textoReloj.text = tiempoParaRomper.ToString("F");
 
-            if (tiempoParaRomper <= (tiempoParaRomperOriginal/2))
+            if (tiempoParaRomper <= (tiempoParaRomperReal/2))
             {
-                txtTitle.color = new Color(255, 255, 0);
+                txtTitle.color = Color.yellow;
             }
         }
 
@@ -98,7 +102,7 @@ public class ObjetoRoto01 : MonoBehaviour
                 errorEjecutado = true;
                 textoReloj.text = ">>> ERROR <<<";
                 textoReloj.color = Color.red;
-                txtTitle.color = new Color(255, 0, 0);
+                txtTitle.color = Color.red;
             }
         }
     }
@@ -146,8 +150,12 @@ public class ObjetoRoto01 : MonoBehaviour
                     imagenObjetoRoto.gameObject.SetActive(false);
                     tiempoParaError = tiempoParaErrorOriginal - tiempoDisminuidoError;
                     tiempoParaRomper = tiempoParaRomperOriginal - tiempoDisminuidoReparar;
+                    tiempoParaErrorReal = tiempoParaError;
+                    tiempoParaRomperReal = tiempoParaRomper;
+                    txtTitle.color = Color.green;
 
-                    objetoRoto.SetActive(false);
+
+                objetoRoto.SetActive(false);
                     objetoFuncionando.SetActive(true);
 
                     /*pieza01 = false; //Probando!!
