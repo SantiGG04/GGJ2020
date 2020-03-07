@@ -51,7 +51,7 @@ MonoBehaviour:
   txtCountDown: {fileID: 322367217362493009}
   escenaVictoria: Victoria
   escenaDerrota: Derrota
-  escenaJuego: Nivel001
+  escenaJuego: Nivel0001
   audioGameA: {fileID: 7444038015282199523}
   audioGameB: {fileID: 3867433678093905881}
 --- !u!1 &322367217266680777

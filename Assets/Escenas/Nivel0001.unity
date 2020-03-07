@@ -4048,6 +4048,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SistemaDeGravedad
       objectReference: {fileID: 0}
+    - target: {fileID: 7295653517077550654, guid: e69040b05c1e2d340ba8e789a035d90d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7295653517077550655, guid: e69040b05c1e2d340ba8e789a035d90d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5140,6 +5145,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SistemaDeMacWire
+      objectReference: {fileID: 0}
+    - target: {fileID: 817695931947037401, guid: adacd99eb9ef3794ba5aceed543312ee,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 817695932155714026, guid: adacd99eb9ef3794ba5aceed543312ee,
         type: 3}
