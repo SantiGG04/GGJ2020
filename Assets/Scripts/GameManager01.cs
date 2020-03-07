@@ -94,9 +94,9 @@ public class GameManager01 : MonoBehaviour
 
     private void SalirDeNivel()
     {
-        audioGameA.volume = 0.5f; // Subimos la Música
-        audioGameB.volume = 0.0f; // Bajaos la Distorsión
- 
+        audioGameA.volume = 0.5f; // Música ON
+        audioGameB.volume = 0.0f; // Distorsión OFF
+
         nivelDeRotura = 0; // Re inicializamos el Nivel de Rotura (Esto tiene que hacerse acá, sino al perder no carga la Escena siguiente)
 
         doOnce = true; // Para que no vuelva a entrar a este IF
