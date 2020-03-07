@@ -39,11 +39,11 @@ public class GameManager01 : MonoBehaviour
 
     void Update()
     {
-        Scene escenaActual = SceneManager.GetActiveScene();
+        Scene escenaActual = SceneManager.GetActiveScene(); // Chequeamos la Escena en la que estamos
 
         if ((escenaActual.name == escenaJuego) && (!doOnce2))
         {
-            IniciarNivel();
+            IniciarNivel(); // Si la Escena corresponde al Nivel de Juego, llamamos a Iniciar Nivel
         }
 
         if (timer >= 0.0f && canCount)
@@ -92,6 +92,17 @@ public class GameManager01 : MonoBehaviour
         }
     }
 
+    private void IniciarNivel()
+    {
+        timer = tiempoVictoria; // Incializamos el Timer
+
+        doOnce = false; // Para que pueda entrar al IF de Condicion de Victoria
+        doOnce2 = true; // Para que no vuelva a Inciar el Nivel
+        canCount = true; // Para que empiece a Contar
+
+        txtCountDown.enabled = true; // Mostramos el Texto que muestra el Conteo
+    }
+
     private void SalirDeNivel()
     {
         audioGameA.volume = 0.5f; // Música ON
@@ -99,22 +110,13 @@ public class GameManager01 : MonoBehaviour
 
         nivelDeRotura = 0; // Re inicializamos el Nivel de Rotura (Esto tiene que hacerse acá, sino al perder no carga la Escena siguiente)
 
-        doOnce = true; // Para que no vuelva a entrar a este IF
-        doOnce2 = false; // Lo ponemos en falso para que cuando carge la nueva escena vuelva a comprobar cuando se carga de nuevo el Nivel0001
+        doOnce = true; // Para que no vuelva a entrar al IF de Condicion de Victoria
+        doOnce2 = false; // Para que cuando carge la nueva escena vuelva a comprobar cuando se carga de nuevo el Nivel0001
         canCount = false; // Para que no siga contando
 
         timer = 0.0f; // Ponemos el Contador en cero
 
-        txtCountDown.enabled = false; // Deshabilitamos el Text del Contador
-        txtCountDown.text = ""; // Ponemos el Texto del Contador en vacio para que no se vea
-    }
-
-    private void IniciarNivel()
-    {
-        timer = tiempoVictoria;
-        txtCountDown.enabled = true;
-        doOnce2 = true;
-        canCount = true;
-        doOnce = false;
+        txtCountDown.enabled = false; // Ocultamos el Texto que muestra el Conteo
+        txtCountDown.text = ""; // Ponemos el Texto del Contador en vacio
     }
 }
