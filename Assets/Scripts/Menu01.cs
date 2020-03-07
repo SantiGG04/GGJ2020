@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class Menu01 : MonoBehaviour
 {
+    [Header("Inventario")]
     public GameObject menuInentario;
 
+    [Header("Piezas")]
     public GameObject contenedorTubos;
     public Image imagenTubos;
     public GameObject contenedorTuercas;
@@ -17,6 +19,7 @@ public class Menu01 : MonoBehaviour
     public Image imagenBateria;
     public GameObject contenedorCinta;
     public Image imagenCinta;
+
     void Update()
     {
         if (Input.GetKey(KeyCode.S))
