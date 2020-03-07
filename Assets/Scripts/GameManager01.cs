@@ -14,6 +14,7 @@ public class GameManager01 : MonoBehaviour
     public float tiempoVictoria;
 
     [Header("Canvas")]
+    public Image imgCountDown;
     public Text txtCountDown;
 
     [Header("Timer")]
@@ -34,7 +35,7 @@ public class GameManager01 : MonoBehaviour
     void Start()
     {
         MakeSingleton();
-        txtCountDown.enabled = false; // Deshabilitamos el Text del Contador
+        imgCountDown.enabled = false; // Deshabilitamos el Text del Contador
     }
 
     void Update()
@@ -49,7 +50,8 @@ public class GameManager01 : MonoBehaviour
         if (timer >= 0.0f && canCount)
         {
             timer -= Time.deltaTime;
-            txtCountDown.text = timer.ToString("F"); // Se muestra el Contador en el Objeto Text
+            int intTimer = Mathf.FloorToInt(timer);
+            txtCountDown.text = intTimer.ToString("D"); // Se muestra el Contador en el Objeto Text
         }
         else if (timer <= 0.0f && !doOnce)
         {
@@ -100,7 +102,7 @@ public class GameManager01 : MonoBehaviour
         doOnce2 = true; // Para que no vuelva a Inciar el Nivel
         canCount = true; // Para que empiece a Contar
 
-        txtCountDown.enabled = true; // Mostramos el Texto que muestra el Conteo
+        imgCountDown.enabled = true; // Mostramos el Texto que muestra el Conteo
     }
 
     private void SalirDeNivel()
@@ -116,7 +118,7 @@ public class GameManager01 : MonoBehaviour
 
         timer = 0.0f; // Ponemos el Contador en cero
 
-        txtCountDown.enabled = false; // Ocultamos el Texto que muestra el Conteo
+        imgCountDown.enabled = false; // Ocultamos el Texto que muestra el Conteo
         txtCountDown.text = ""; // Ponemos el Texto del Contador en vacio
     }
 }
