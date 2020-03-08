@@ -35,7 +35,8 @@ public class GameManager01 : MonoBehaviour
     void Start()
     {
         MakeSingleton();
-        imgCountDown.enabled = false; // Deshabilitamos el Text del Contador
+        imgCountDown.enabled = false; // Deshabilitamos la Imagen del Contador
+        txtCountDown.enabled = false; // Ocultamos el Texto que muestra el Conteo
     }
 
     void Update()
@@ -102,7 +103,8 @@ public class GameManager01 : MonoBehaviour
         doOnce2 = true; // Para que no vuelva a Inciar el Nivel
         canCount = true; // Para que empiece a Contar
 
-        imgCountDown.enabled = true; // Mostramos el Texto que muestra el Conteo
+        imgCountDown.enabled = true; // Mostramos la Imagen que muestra el Conteo
+        txtCountDown.enabled = true; // Ocultamos el Texto que muestra el Conteo
     }
 
     private void SalirDeNivel()
@@ -118,7 +120,8 @@ public class GameManager01 : MonoBehaviour
 
         timer = 0.0f; // Ponemos el Contador en cero
 
-        imgCountDown.enabled = false; // Ocultamos el Texto que muestra el Conteo
+        imgCountDown.enabled = false; // Ocultamos la Imagen que muestra el Conteo
+        txtCountDown.enabled = false; // Ocultamos el Texto que muestra el Conteo
         txtCountDown.text = ""; // Ponemos el Texto del Contador en vacio
     }
 }
