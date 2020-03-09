@@ -7,7 +7,7 @@ public class MovimientoPersonaje01 : MonoBehaviour
     public float velocidadMovimientoOriginal;
     public float velocidadMovimientoActual;
 
-    public float modificadorDireccion;
+    public bool modificadorDireccion = false;
 
 	public bool estoyPenalizado = false;
 	public float velocidadMovPenalizado;
@@ -71,21 +71,38 @@ public class MovimientoPersonaje01 : MonoBehaviour
 			rBloqueada = false;
 		}
 
-		if (Input.GetKey(KeyCode.RightArrow) && rBloqueada == false)
+		if (Input.GetKey(KeyCode.RightArrow) && rBloqueada == false && modificadorDireccion == false)
 		{
 			SpriteRenderer rend = gameObject.GetComponentInChildren<SpriteRenderer>();
 			rend.flipX = true;
 			Animator anim = gameObject.GetComponentInChildren<Animator>();
 			anim.SetInteger("Velocidad", 1);
-			transform.Translate((velocidadMovimientoActual * modificadorDireccion) * Time.deltaTime, 0, 0);
+			transform.Translate(velocidadMovimientoActual * Time.deltaTime, 0, 0);
 		}
-		if (Input.GetKey(KeyCode.LeftArrow) && lBloqueada == false)
+		else if (Input.GetKey(KeyCode.RightArrow) && rBloqueada == false && modificadorDireccion == true)
 		{
 			SpriteRenderer rend = gameObject.GetComponentInChildren<SpriteRenderer>();
 			rend.flipX = false;
 			Animator anim = gameObject.GetComponentInChildren<Animator>();
 			anim.SetInteger("Velocidad", 1);
-			transform.Translate((-velocidadMovimientoActual * modificadorDireccion) * Time.deltaTime, 0, 0);
+			transform.Translate(-velocidadMovimientoActual * Time.deltaTime, 0, 0);
+		}
+
+		if (Input.GetKey(KeyCode.LeftArrow) && lBloqueada == false && modificadorDireccion == false)
+		{
+			SpriteRenderer rend = gameObject.GetComponentInChildren<SpriteRenderer>();
+			rend.flipX = false;
+			Animator anim = gameObject.GetComponentInChildren<Animator>();
+			anim.SetInteger("Velocidad", 1);
+			transform.Translate(-velocidadMovimientoActual * Time.deltaTime, 0, 0);
+		}
+		else if (Input.GetKey(KeyCode.LeftArrow) && lBloqueada == false && modificadorDireccion == true)
+		{
+			SpriteRenderer rend = gameObject.GetComponentInChildren<SpriteRenderer>();
+			rend.flipX = true;
+			Animator anim = gameObject.GetComponentInChildren<Animator>();
+			anim.SetInteger("Velocidad", 1);
+			transform.Translate(velocidadMovimientoActual * Time.deltaTime, 0, 0);
 		}
 
 		if (Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.LeftArrow))

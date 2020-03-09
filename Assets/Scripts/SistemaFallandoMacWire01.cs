@@ -9,6 +9,6 @@ public class SistemaFallandoMacWire01 : MonoBehaviour
         GameObject PJ = GameObject.FindGameObjectWithTag("Player");
         MovimientoPersonaje01 MovPJ = PJ.GetComponentInChildren<MovimientoPersonaje01>();
 
-        MovPJ.modificadorDireccion = -1;
+        MovPJ.modificadorDireccion = true;
     }
 }
