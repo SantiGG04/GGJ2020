@@ -674,18 +674,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2035307107431018467, guid: a60a559143b7bd14aafdf1f52cf13a79,
-        type: 3}
-      propertyPath: layerParedes.m_Bits
-      value: 6144
-      objectReference: {fileID: 0}
-    - target: {fileID: 2035307107431018467, guid: a60a559143b7bd14aafdf1f52cf13a79,
-        type: 3}
-      propertyPath: velocidadMovimiento
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1168288656860166575, guid: a60a559143b7bd14aafdf1f52cf13a79, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a60a559143b7bd14aafdf1f52cf13a79, type: 3}
 --- !u!4 &209799021 stripped
 Transform:
@@ -1064,8 +1053,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5643897927700944705, guid: a059a52820d17de45b5912c6684c300f,
         type: 3}
-      propertyPath: layerParedes.m_Bits
-      value: 6144
+      propertyPath: estaActivo
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5643897927700944707, guid: a059a52820d17de45b5912c6684c300f,
         type: 3}
@@ -1122,8 +1111,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4781523263415763213, guid: a059a52820d17de45b5912c6684c300f, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a059a52820d17de45b5912c6684c300f, type: 3}
 --- !u!4 &374110459 stripped
 Transform:
@@ -1236,16 +1224,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemigo2F_ss
       objectReference: {fileID: 0}
-    - target: {fileID: 759134835397033420, guid: 27d9555d912d8694a88713753a2bc952,
-        type: 3}
-      propertyPath: layerParedes.m_Bits
-      value: 6144
-      objectReference: {fileID: 0}
-    - target: {fileID: 759134835397033420, guid: 27d9555d912d8694a88713753a2bc952,
-        type: 3}
-      propertyPath: velocidadMovimiento
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 759134835397033422, guid: 27d9555d912d8694a88713753a2bc952,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1301,18 +1279,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4477802303075219112, guid: 27d9555d912d8694a88713753a2bc952,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4477802303075219112, guid: 27d9555d912d8694a88713753a2bc952,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 468576999690120064, guid: 27d9555d912d8694a88713753a2bc952, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27d9555d912d8694a88713753a2bc952, type: 3}
 --- !u!1 &502866995 stripped
 GameObject:
@@ -2754,16 +2721,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2035307107431018467, guid: a60a559143b7bd14aafdf1f52cf13a79,
         type: 3}
-      propertyPath: layerParedes.m_Bits
-      value: 6144
+      propertyPath: estaActivo
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8213835206440752563, guid: a60a559143b7bd14aafdf1f52cf13a79,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.58
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1168288656860166575, guid: a60a559143b7bd14aafdf1f52cf13a79, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a60a559143b7bd14aafdf1f52cf13a79, type: 3}
 --- !u!4 &1422025033 stripped
 Transform:
@@ -3605,6 +3566,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 833620123, guid: 80ebd10349b6d21498ade840fd50b57a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 833620124, guid: 80ebd10349b6d21498ade840fd50b57a, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 370
@@ -3719,6 +3684,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.49056602
       objectReference: {fileID: 0}
+    - target: {fileID: 3438109611403231800, guid: 80ebd10349b6d21498ade840fd50b57a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3438109611403231801, guid: 80ebd10349b6d21498ade840fd50b57a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3749,6 +3719,11 @@ PrefabInstance:
       propertyPath: objetoAsociado
       value: 
       objectReference: {fileID: 8677151568359480380}
+    - target: {fileID: 3438109611441464147, guid: 80ebd10349b6d21498ade840fd50b57a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3438109611753022294, guid: 80ebd10349b6d21498ade840fd50b57a,
         type: 3}
       propertyPath: m_Name
@@ -4193,7 +4168,7 @@ PrefabInstance:
     - target: {fileID: 7295653517077550654, guid: e69040b05c1e2d340ba8e789a035d90d,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7295653517077550655, guid: e69040b05c1e2d340ba8e789a035d90d,
         type: 3}
@@ -4373,16 +4348,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemigo8B_ss
       objectReference: {fileID: 0}
-    - target: {fileID: 5643897927700944705, guid: a059a52820d17de45b5912c6684c300f,
-        type: 3}
-      propertyPath: layerParedes.m_Bits
-      value: 6144
-      objectReference: {fileID: 0}
-    - target: {fileID: 5643897927700944705, guid: a059a52820d17de45b5912c6684c300f,
-        type: 3}
-      propertyPath: velocidadMovimiento
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5643897927700944707, guid: a059a52820d17de45b5912c6684c300f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4438,8 +4403,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4781523263415763213, guid: a059a52820d17de45b5912c6684c300f, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a059a52820d17de45b5912c6684c300f, type: 3}
 --- !u!1001 &1875754224
 PrefabInstance:
@@ -4708,13 +4672,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 759134835397033420, guid: 27d9555d912d8694a88713753a2bc952,
         type: 3}
-      propertyPath: velocidadMovimiento
-      value: -2
-      objectReference: {fileID: 0}
-    - target: {fileID: 759134835397033420, guid: 27d9555d912d8694a88713753a2bc952,
-        type: 3}
-      propertyPath: layerParedes.m_Bits
-      value: 6144
+      propertyPath: estaActivo
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 759134835397033422, guid: 27d9555d912d8694a88713753a2bc952,
         type: 3}
@@ -4771,13 +4730,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5913831393888473577, guid: 27d9555d912d8694a88713753a2bc952,
-        type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 468576999690120064, guid: 27d9555d912d8694a88713753a2bc952, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27d9555d912d8694a88713753a2bc952, type: 3}
 --- !u!4 &2060271611 stripped
 Transform:
@@ -5224,7 +5177,7 @@ PrefabInstance:
     - target: {fileID: 817695931947037401, guid: adacd99eb9ef3794ba5aceed543312ee,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 817695932155714026, guid: adacd99eb9ef3794ba5aceed543312ee,
         type: 3}
@@ -5478,6 +5431,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SistemaDeGeoposicionamiento
+      objectReference: {fileID: 0}
+    - target: {fileID: 3277965888275337179, guid: 59d11e9b1db4bf84a9dcbe78e48846f8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3277965888534324456, guid: 59d11e9b1db4bf84a9dcbe78e48846f8,
         type: 3}

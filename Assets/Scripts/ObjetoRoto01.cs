@@ -160,12 +160,12 @@ public class ObjetoRoto01 : MonoBehaviour
                     txtTitle.color = Color.green; // Ya arregló la máquina, así que volvemos a inicializar el Color del Titulo en Verde
 
 
-                objetoRoto.SetActive(false);
+                    objetoRoto.SetActive(false);
                     objetoFuncionando.SetActive(true);
 
-                    /*pieza01 = false; //Probando!!
-                    pieza02 = false; //Probando!!
-                    pieza03 = false; //Probando!!*/
+                    pieza01 = false;
+                    pieza02 = false;
+                    pieza03 = false;
 
                     tildePieza01.SetActive(false);
                     tildePieza02.SetActive(false);
