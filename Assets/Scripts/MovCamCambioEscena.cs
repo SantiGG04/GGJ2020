@@ -4,54 +4,39 @@ using UnityEngine;
 
 public class MovCamCambioEscena : MonoBehaviour
 {
+    [Header("Main Camera")]
     public Camera mainCam;
-    // public GameObject mainCanvas;
 
-    /*
-    public float cantidaMovimientos; // La Cantidad de veces que va a llamar la funcion MoverCamara
-    public float velocidadMovimiento; // Cuanto pasa entre cada vez que llama a la funcion MoverCamara
-    public float longitudMovimiento; // Que tanto se mueve cada vez que llamamos a la funcion MoverCamara
-    */
-
+    [Header("Parametros Movimiento")]
     public float cantidadMovimiento; // Cuanto se mueve la Camara
-
-    private bool deboMoverme = false;
-    // private int contadorMovimientos = 0;
-
-    void Update()
-    {
-        if (deboMoverme)
-        {
-            //mainCanvas.GetComponent<Canvas>().enabled = false;
-
-            //InvokeRepeating("MoverCamara", 0, velocidadMovimiento);
-
-            mainCam.gameObject.transform.Translate(cantidadMovimiento, 0, 0);
-
-            deboMoverme = false;
-        }        
-    }
+    private Transform transformEntrada;
+    private Transform transformSalida;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.transform.parent.name == "Personaje")
-        {
-            deboMoverme = true;
-            cantidadMovimiento = cantidadMovimiento * -1;
-        }
+        transformEntrada = other.transform.gameObject.transform;
     }
 
-    /*
-    void MoverCamara()
+    private void OnTriggerExit(Collider other)
     {
-        mainCam.gameObject.transform.Translate(longitudMovimiento, 0, 0);
+        transformSalida = other.transform.gameObject.transform;
+        float diferenciaEjeX;
 
-        contadorMovimientos++;
-
-        if (contadorMovimientos == cantidaMovimientos)
+        if (transformEntrada.position.x < transformSalida.position.x)
         {
-            CancelInvoke();
+            diferenciaEjeX = transformEntrada.position.x / transformSalida.position.x;
+            Debug.Log(diferenciaEjeX);
+        }
+        else
+        {
+            diferenciaEjeX = transformSalida.position.x / transformEntrada.position.x;
+            Debug.Log(diferenciaEjeX);
+        }
+
+        if (other.gameObject.transform.parent.name == "Personaje" && diferenciaEjeX >= 1)
+        {
+            cantidadMovimiento *= -1;
+            mainCam.gameObject.transform.Translate(cantidadMovimiento, 0, 0);
         }
     }
-    */
 }
