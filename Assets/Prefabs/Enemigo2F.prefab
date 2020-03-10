@@ -72,7 +72,6 @@ GameObject:
   m_Component:
   - component: {fileID: 759134835397033422}
   - component: {fileID: 759134835397033420}
-  - component: {fileID: 468576999690120064}
   m_Layer: 10
   m_Name: Enemigo2F
   m_TagString: Boss
@@ -108,25 +107,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfb68dc00bc661a49a5c125168b1bf34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMovimiento: 2
+  velocidadMovimiento: -2
   origenRayCasts: {fileID: 759134834014002942}
   distanciaRayCastL: 0.6
   distanciaRayCastR: 0.6
   layerParedes:
     serializedVersion: 2
-    m_Bits: 4096
---- !u!114 &468576999690120064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 759134835397033395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69edd7adad8346b49ba685044c6d446c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+    m_Bits: 6144
 --- !u!1 &759134835478205630
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,7 +168,7 @@ PrefabInstance:
     - target: {fileID: 1639875666024551491, guid: ed8851ef35e9074419fd1633aed4e106,
         type: 3}
       propertyPath: m_FlipX
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4028523129859780765, guid: ed8851ef35e9074419fd1633aed4e106,
         type: 3}

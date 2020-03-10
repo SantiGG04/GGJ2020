@@ -6,7 +6,6 @@ public class DetectarColisionEnemigo : MonoBehaviour
 {
     public MovimientoPersonaje01 movPj;
 
-    // Variables de Sonido
     [Header("Variables de Sonido")]
     public GameObject contendedorSonidoContactoEnemigo;
 
@@ -18,7 +17,7 @@ public class DetectarColisionEnemigo : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.transform.gameObject.tag == "Boss")
+        if (other.transform.gameObject.tag == "Boss" && other.transform.gameObject.GetComponentInParent<MovimientoEnemigos>().estaActivo)
         {
             movPj.estoyPenalizado = true;
             movPj.timer = movPj.duracionPenalizacion;

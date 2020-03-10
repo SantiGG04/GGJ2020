@@ -72,7 +72,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2035307107431018465}
   - component: {fileID: 2035307107431018467}
-  - component: {fileID: 1168288656860166575}
   m_Layer: 10
   m_Name: Enemigo5A
   m_TagString: Boss
@@ -114,19 +113,7 @@ MonoBehaviour:
   distanciaRayCastR: 0.6
   layerParedes:
     serializedVersion: 2
-    m_Bits: 4096
---- !u!114 &1168288656860166575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2035307107431018396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69edd7adad8346b49ba685044c6d446c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+    m_Bits: 6144
 --- !u!1 &2035307107485189777
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,7 +183,7 @@ PrefabInstance:
     - target: {fileID: 9151866821420113171, guid: 184690db6ff2e674fbfe352fdf0ac06f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.35
+      value: -0.58
       objectReference: {fileID: 0}
     - target: {fileID: 9151866821420113171, guid: 184690db6ff2e674fbfe352fdf0ac06f,
         type: 3}

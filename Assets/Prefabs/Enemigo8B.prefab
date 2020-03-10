@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5643897927700944707}
   - component: {fileID: 5643897927700944705}
-  - component: {fileID: 4781523263415763213}
   m_Layer: 10
   m_Name: Enemigo8B
   m_TagString: Untagged
@@ -52,19 +51,7 @@ MonoBehaviour:
   distanciaRayCastR: 0.6
   layerParedes:
     serializedVersion: 2
-    m_Bits: 4096
---- !u!114 &4781523263415763213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5643897927700944702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69edd7adad8346b49ba685044c6d446c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+    m_Bits: 6144
 --- !u!1 &5643897927749795379
 GameObject:
   m_ObjectHideFlags: 0
