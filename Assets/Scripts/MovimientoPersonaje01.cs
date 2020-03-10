@@ -43,32 +43,61 @@ public class MovimientoPersonaje01 : MonoBehaviour
             velocidadMovimientoActual = velocidadMovimientoOriginal;
         }
 
-		RaycastHit lHit;
-		Ray lColision = new Ray (origenRayCasts.transform.position, Vector3.left);
-		Debug.DrawRay (origenRayCasts.transform.position, Vector3.left * distanciaRayCastL);
-
-		if (Physics.Raycast (lColision, out lHit, distanciaRayCastL, layerParedes))
+		if (!modificadorDireccion)
 		{
-			lBloqueada = true;
-		}
+			RaycastHit lHit;
+			Ray lColision = new Ray(origenRayCasts.transform.position, Vector3.left);
+			Debug.DrawRay(origenRayCasts.transform.position, Vector3.left * distanciaRayCastL);
 
+			if (Physics.Raycast(lColision, out lHit, distanciaRayCastL, layerParedes))
+			{
+				lBloqueada = true;
+			}
+			else
+			{
+				lBloqueada = false;
+			}
+
+			RaycastHit rHit;
+			Ray rColision = new Ray(origenRayCasts.transform.position, Vector3.right);
+			Debug.DrawRay(origenRayCasts.transform.position, Vector3.right * distanciaRayCastR);
+
+			if (Physics.Raycast(rColision, out rHit, distanciaRayCastR, layerParedes))
+			{
+				rBloqueada = true;
+			}
+			else
+			{
+				rBloqueada = false;
+			}
+		}
 		else
 		{
-			lBloqueada = false;
-		}
+			RaycastHit lHit;
+			Ray lColision = new Ray(origenRayCasts.transform.position, Vector3.right);
+			Debug.DrawRay(origenRayCasts.transform.position, Vector3.right * distanciaRayCastL);
 
-		RaycastHit rHit;
-		Ray rColision = new Ray (origenRayCasts.transform.position, Vector3.right);
-		Debug.DrawRay (origenRayCasts.transform.position, Vector3.right * distanciaRayCastR);
+			if (Physics.Raycast(lColision, out lHit, distanciaRayCastL, layerParedes))
+			{
+				lBloqueada = true;
+			}
+			else
+			{
+				lBloqueada = false;
+			}
 
-		if (Physics.Raycast (rColision, out rHit, distanciaRayCastR, layerParedes))
-		{
-			rBloqueada = true;
-		}
+			RaycastHit rHit;
+			Ray rColision = new Ray(origenRayCasts.transform.position, Vector3.left);
+			Debug.DrawRay(origenRayCasts.transform.position, Vector3.left * distanciaRayCastR);
 
-		else
-		{
-			rBloqueada = false;
+			if (Physics.Raycast(rColision, out rHit, distanciaRayCastR, layerParedes))
+			{
+				rBloqueada = true;
+			}
+			else
+			{
+				rBloqueada = false;
+			}
 		}
 
 		if (Input.GetKey(KeyCode.RightArrow) && rBloqueada == false && modificadorDireccion == false)
