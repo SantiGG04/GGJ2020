@@ -116,7 +116,7 @@ public class ObjetoRoto01 : MonoBehaviour
     {
         if (col.gameObject.transform.parent.transform.parent.name == "Personaje" || col.gameObject.transform.parent.name == "Personaje")
         {
-            Debug.Log(col.gameObject.transform.parent.name);
+            //Debug.Log(col.gameObject.transform.parent.name);
             if (error == true && roto == false)
             {
                 ContenedorPiezas01 cont01 = contenedorPieza01.GetComponentInChildren<ContenedorPiezas01>();

@@ -9,34 +9,39 @@ public class MovCamCambioEscena : MonoBehaviour
 
     [Header("Parametros Movimiento")]
     public float cantidadMovimiento; // Cuanto se mueve la Camara
-    private Transform transformEntrada;
-    private Transform transformSalida;
+    private Vector3 positionEntrada;
+    private GameObject goPersonaje;
+
+    private void Start()
+    {
+        goPersonaje = null;
+    }
+
+    private void Update()
+    {
+        if (goPersonaje != null)
+        {
+            if (Vector3.Distance(positionEntrada, transform.position) >= 7.0f)
+            {
+                Debug.Log(Vector3.Distance(positionEntrada, transform.position));
+
+                mainCam.gameObject.transform.Translate(cantidadMovimiento, 0, 0);
+                cantidadMovimiento *= -1;
+
+                goPersonaje = null;
+            }
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        transformEntrada = other.transform.gameObject.transform;
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        transformSalida = other.transform.gameObject.transform;
-        float diferenciaEjeX;
-
-        if (transformEntrada.position.x < transformSalida.position.x)
+        if (other.gameObject.transform.parent.name == "Personaje")
         {
-            diferenciaEjeX = transformEntrada.position.x / transformSalida.position.x;
-            Debug.Log(diferenciaEjeX);
-        }
-        else
-        {
-            diferenciaEjeX = transformSalida.position.x / transformEntrada.position.x;
-            Debug.Log(diferenciaEjeX);
-        }
+            goPersonaje = other.transform.gameObject;
+            Debug.Log(goPersonaje.transform.parent.name);
 
-        if (other.gameObject.transform.parent.name == "Personaje" && diferenciaEjeX >= 1)
-        {
-            cantidadMovimiento *= -1;
-            mainCam.gameObject.transform.Translate(cantidadMovimiento, 0, 0);
+            positionEntrada = goPersonaje.transform.position;
+            Debug.Log(Vector3.Distance(positionEntrada, transform.position));
         }
     }
 }
