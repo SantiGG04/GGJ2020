@@ -907,6 +907,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3236779177781367898}
   - component: {fileID: 3236779177781367899}
+  - component: {fileID: 3186348}
   m_Layer: 8
   m_Name: Personaje
   m_TagString: Player
@@ -944,7 +945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidadMovimientoOriginal: 4
   velocidadMovimientoActual: 0
-  modificadorDireccion: 1
+  modificadorDireccion: 0
   estoyPenalizado: 0
   velocidadMovPenalizado: 1.5
   duracionPenalizacion: 2
@@ -961,6 +962,31 @@ MonoBehaviour:
   layerParedes:
     serializedVersion: 2
     m_Bits: 2048
+--- !u!114 &3186348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3236779177781368230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2c5cc0dcd382b409059a33f27df6a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamara: {fileID: 0}
+  positionCamara01: {x: -33.75, y: 1, z: -11.49}
+  posCam01_A: -45.14
+  posCam01_B: -22.41
+  positionCamara02: {x: -11.48, y: 1, z: -11.49}
+  posCam02_A: -22.41
+  posCam02_B: -0.17
+  positionCamara03: {x: 10.83, y: 1, z: -11.49}
+  posCam03_A: -0.17
+  posCam03_B: 22.13
+  positionCamara04: {x: 33.33, y: 1, z: -11.49}
+  posCam04_A: 22.13
+  posCam04_B: 44.77
 --- !u!1 &3236779178096866067
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,8 +1183,6 @@ MonoBehaviour:
   imagenBateria: {fileID: 1806170422}
   contenedorCinta: {fileID: 3988825026292596766}
   imagenCinta: {fileID: 1062357032}
-  txtCanvasPersonaje: {fileID: 0}
-  txtCanvasGameManager: {fileID: 0}
 --- !u!1 &3236779178363631032
 GameObject:
   m_ObjectHideFlags: 0

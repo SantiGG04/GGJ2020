@@ -827,6 +827,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3186348, guid: 0ea7212f2fb9abe4e9cbd78cd3265de9, type: 3}
+      propertyPath: mainCamara
+      value: 
+      objectReference: {fileID: 1249786179}
     - target: {fileID: 3236779177781367898, guid: 0ea7212f2fb9abe4e9cbd78cd3265de9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -835,7 +839,7 @@ PrefabInstance:
     - target: {fileID: 3236779177781367898, guid: 0ea7212f2fb9abe4e9cbd78cd3265de9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.16
+      value: -2.6
       objectReference: {fileID: 0}
     - target: {fileID: 3236779177781367898, guid: 0ea7212f2fb9abe4e9cbd78cd3265de9,
         type: 3}
@@ -2187,7 +2191,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249786177}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.29, y: 1, z: -11.49}
+  m_LocalPosition: {x: -11.48, y: 1, z: -11.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2276,6 +2280,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BordeEscena (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7200486415845869280, guid: a35dde3ebc6a9d44293b700669a2724d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7200486415845869281, guid: a35dde3ebc6a9d44293b700669a2724d,
         type: 3}
       propertyPath: mainCam
@@ -2285,6 +2294,11 @@ PrefabInstance:
         type: 3}
       propertyPath: cantidadMovimiento
       value: 22.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7200486415845869281, guid: a35dde3ebc6a9d44293b700669a2724d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a35dde3ebc6a9d44293b700669a2724d, type: 3}
@@ -2365,6 +2379,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BordeEscena
       objectReference: {fileID: 0}
+    - target: {fileID: 7200486415845869280, guid: a35dde3ebc6a9d44293b700669a2724d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7200486415845869281, guid: a35dde3ebc6a9d44293b700669a2724d,
         type: 3}
       propertyPath: mainCam
@@ -2374,6 +2393,11 @@ PrefabInstance:
         type: 3}
       propertyPath: cantidadMovimiento
       value: -22.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7200486415845869281, guid: a35dde3ebc6a9d44293b700669a2724d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a35dde3ebc6a9d44293b700669a2724d, type: 3}
@@ -2454,6 +2478,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BordeEscena (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7200486415845869280, guid: a35dde3ebc6a9d44293b700669a2724d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7200486415845869281, guid: a35dde3ebc6a9d44293b700669a2724d,
         type: 3}
       propertyPath: mainCam
@@ -2463,6 +2492,11 @@ PrefabInstance:
         type: 3}
       propertyPath: cantidadMovimiento
       value: -22.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7200486415845869281, guid: a35dde3ebc6a9d44293b700669a2724d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a35dde3ebc6a9d44293b700669a2724d, type: 3}

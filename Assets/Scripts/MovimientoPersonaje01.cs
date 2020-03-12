@@ -4,31 +4,36 @@ using System.Collections;
 public class MovimientoPersonaje01 : MonoBehaviour
 
 {
-    public float velocidadMovimientoOriginal;
+	[Header("Movimiento")]
+	public float velocidadMovimientoOriginal;
     public float velocidadMovimientoActual;
 
-    public bool modificadorDireccion = false;
+	[Header("Falla MacWire")]
+	public bool modificadorDireccion = false;
 
+	[Header("Penalizador Velocidad")]
 	public bool estoyPenalizado = false;
 	public float velocidadMovPenalizado;
 	public float duracionPenalizacion;
 	public float timer;
 
+	[Header("Bonificador Velocidad")]
     public bool estoyBonificado = false;
     public float velocidadMovBonificada;
     public float duracionBonificacion;
     public float timerBonificacion;
 
-
+	[Header("Raycast")]
     public GameObject origenRayCasts;
 	public float distanciaRayCastL;
 	public float distanciaRayCastR;
 	public bool lBloqueada;
 	public bool rBloqueada;
 
+	[Header("Layers")]
 	public LayerMask layerParedes;
 
-    void FixedUpdate()
+	void FixedUpdate()
     {
         if (estoyPenalizado)
         {
@@ -159,5 +164,5 @@ public class MovimientoPersonaje01 : MonoBehaviour
             estoyBonificado = false;
             timerBonificacion = 0.0f;
         }
-    }
+	}
 }
