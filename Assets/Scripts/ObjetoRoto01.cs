@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class ObjetoRoto01 : MonoBehaviour
 {
+    [Header("Titulo")]
     public string sistemaDe;
 
+    [Header("Canvas Sistema")]
     public GameObject Cartel;
     public GameObject contenedorPieza01;
     public GameObject contenedorPieza02;
@@ -18,32 +20,31 @@ public class ObjetoRoto01 : MonoBehaviour
     public GameObject tildePieza02;
     public GameObject tildePieza03;
 
+    [Header("Prefabs Estados")]
     public GameObject objetoFuncionando;
     public GameObject objetoRoto;
-    
+
+    [Header("GameManager")]
     public GameManager01 gameManager;
 
+    [Header("Canvas Quest")]
     public GameObject uIMision;
     public Text textoReloj;
+    public Text txtTitle;
 
+    [Header("Parametros Error")]
     public bool error = false;
     public bool roto = false;
     public float tiempoParaErrorOriginal;
-    public float tiempoParaErrorReal;
     public float tiempoParaError;
     public float tiempoParaRomperOriginal;
-    public float tiempoParaRomperReal;
+    private float tiempoParaRomperReal;
     public float tiempoParaRomper;
     public bool errorEjecutado;
     public float tiempoDisminuidoError;
     public float tiempoDisminuidoReparar;
     public Image imagenObjetoRoto;
 
-    // Variables Canvas Quest
-    [Header("Variables de QuestCanvas")]
-    public Text txtTitle;
-
-    // Variables de Sonido
     [Header("Variables de Sonido")]
     public GameObject contendedorSonidoError;
     public GameObject contendedorSonidoRota;
@@ -54,7 +55,6 @@ public class ObjetoRoto01 : MonoBehaviour
         // Inicializacion de Timers
         tiempoParaError = tiempoParaErrorOriginal;
         tiempoParaRomper = tiempoParaRomperOriginal;
-        tiempoParaErrorReal = tiempoParaError;
         tiempoParaRomperReal = tiempoParaRomper;
 
         // Busca el GameManager
@@ -155,7 +155,6 @@ public class ObjetoRoto01 : MonoBehaviour
                     imagenObjetoRoto.gameObject.SetActive(false);
                     tiempoParaError = tiempoParaErrorOriginal - tiempoDisminuidoError;
                     tiempoParaRomper = tiempoParaRomperOriginal - tiempoDisminuidoReparar;
-                    tiempoParaErrorReal = tiempoParaError; // Actualizo el Tiempo Real que pasa hasta que se genere el Error
                     tiempoParaRomperReal = tiempoParaRomper; // Actualizo el Tiempo Real que tiene hasta que se Rompe
                     txtTitle.color = Color.green; // Ya arregló la máquina, así que volvemos a inicializar el Color del Titulo en Verde
 
