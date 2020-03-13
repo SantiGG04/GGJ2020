@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 8677151567665678835}
   - component: {fileID: 8677151567665678838}
   - component: {fileID: 8677151567665678839}
+  - component: {fileID: 1793429318}
   m_Layer: 13
   m_Name: Cube
   m_TagString: Untagged
@@ -255,22 +256,33 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   uIMision: {fileID: 0}
   textoReloj: {fileID: 0}
+  txtTitle: {fileID: 0}
   error: 0
   roto: 0
   tiempoParaErrorOriginal: 10
-  tiempoParaErrorReal: 0
   tiempoParaError: 0
   tiempoParaRomperOriginal: 20
-  tiempoParaRomperReal: 0
   tiempoParaRomper: 0
   errorEjecutado: 0
   tiempoDisminuidoError: 1
   tiempoDisminuidoReparar: 15
   imagenObjetoRoto: {fileID: 7892147548492429964}
-  txtTitle: {fileID: 0}
   contendedorSonidoError: {fileID: 3998526559625528186}
   contendedorSonidoRota: {fileID: 2306695636440218985}
   contendedorSonidoArreglando: {fileID: 8996735162483110305}
+--- !u!114 &1793429318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8677151567665678845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed679020789eaff4095b5e96255bd4e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imagenError: {fileID: 0}
 --- !u!1 &8677151567674779668
 GameObject:
   m_ObjectHideFlags: 0
