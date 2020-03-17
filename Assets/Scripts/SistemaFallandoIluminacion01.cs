@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class SistemaFallandoIluminacion01 : MonoBehaviour
 {
-    //    public Image imagenError;
-    //    public Sprite imagenError;
     public GameObject imagenError;
 
     public void SistemaFallando()
