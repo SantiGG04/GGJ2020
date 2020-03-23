@@ -259,9 +259,9 @@ MonoBehaviour:
   txtTitle: {fileID: 0}
   error: 0
   roto: 0
-  tiempoParaErrorOriginal: 10
+  tiempoParaErrorOriginal: 35
   tiempoParaError: 0
-  tiempoParaRomperOriginal: 20
+  tiempoParaRomperOriginal: 60
   tiempoParaRomper: 0
   errorEjecutado: 0
   tiempoDisminuidoError: 1
