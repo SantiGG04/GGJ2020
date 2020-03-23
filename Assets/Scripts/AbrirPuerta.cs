@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class AbrirPuerta : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [Header("Objetos")]
+    public GameObject puertaArriba;
+    public GameObject puertaAbajp;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
