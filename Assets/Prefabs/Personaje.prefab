@@ -987,6 +987,15 @@ MonoBehaviour:
   positionCamara04: {x: 33.33, y: 1, z: -11.49}
   posCam04_A: 22.13
   posCam04_B: 44.77
+  positionCamara05: {x: -56.5, y: 1, z: -11.49}
+  posCam05_A: -67.63
+  posCam05_B: -45.14
+  positionCamara06: {x: -78.62, y: 1, z: -11.49}
+  posCam06_A: -89.87
+  posCam06_B: -67.63
+  positionCamara07: {x: -101.23, y: 1, z: -11.49}
+  posCam07_A: -111.4
+  posCam07_B: -89.87
 --- !u!1 &3236779178096866067
 GameObject:
   m_ObjectHideFlags: 0

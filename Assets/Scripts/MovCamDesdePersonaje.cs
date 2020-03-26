@@ -22,11 +22,25 @@ public class MovCamDesdePersonaje : MonoBehaviour
 	public float posCam03_A;
 	public float posCam03_B;
 
-	[Header("Posicion Camara 03")]
+	[Header("Posicion Camara 04")]
 	public Vector3 positionCamara04;
 	public float posCam04_A;
 	public float posCam04_B;
 
+	[Header("Posicion Camara 05")]
+	public Vector3 positionCamara05;
+	public float posCam05_A;
+	public float posCam05_B;
+
+	[Header("Posicion Camara 06")]
+	public Vector3 positionCamara06;
+	public float posCam06_A;
+	public float posCam06_B;
+
+	[Header("Posicion Camara 07")]
+	public Vector3 positionCamara07;
+	public float posCam07_A;
+	public float posCam07_B;
 	private void Start()
 	{
 		mainCamara = Camera.main;
@@ -49,6 +63,18 @@ public class MovCamDesdePersonaje : MonoBehaviour
 		else if (transform.position.x >= posCam04_A && transform.position.x <= posCam04_B)
 		{
 			mainCamara.gameObject.transform.position = positionCamara04;
+		}
+		else if (transform.position.x >= posCam05_A && transform.position.x <= posCam05_B)
+		{
+			mainCamara.gameObject.transform.position = positionCamara05;
+		}
+		else if (transform.position.x >= posCam06_A && transform.position.x <= posCam06_B)
+		{
+			mainCamara.gameObject.transform.position = positionCamara06;
+		}
+		else if (transform.position.x >= posCam07_A && transform.position.x <= posCam07_B)
+		{
+			mainCamara.gameObject.transform.position = positionCamara07;
 		}
 	}
 }
