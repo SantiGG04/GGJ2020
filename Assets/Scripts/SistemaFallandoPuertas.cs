@@ -6,16 +6,32 @@ public class SistemaFallandoPuertas : MonoBehaviour
 {
     // La idea que tengo es hacer una funcion que busque en la Escena los Objetos que tengan un Tag llamado "ColliderPuerta" y que lo active. Así podemos agregar puetas sin tener que cambiar el Script ni las Variables.
 
-    /*
-     
-    https://answers.unity.com/questions/24257/how-do-i-find-all-game-objects-with-the-same-name.html 
+    // También tiene que activar la Animacion de Cerrar Puertas
 
-    foreach(GameObject fooObj in GameObject.FindGameObjectsWithTag("foo"))
+    /*     
+     * https://answers.unity.com/questions/24257/how-do-i-find-all-game-objects-with-the-same-name.html 
+     *
+     *           foreach(GameObject fooObj in GameObject.FindGameObjectsWithTag("foo"))
+     *           {
+     *               if(fooObj.name == "bar")
+     *               {
+     *                   //Do Something
+     *               }
+     *           }
+    */
+
+    private GameObject[] listPuertaGOs;
+
+    public void SistemaFallando()
     {
-        if(fooObj.name == "bar")
+        listPuertaGOs = GameObject.FindGameObjectsWithTag("ColliderPuerta"); // Busco todos los GameObjects que tengan el Tag "ColliderPuerta"
+
+        foreach (GameObject PuertaGO in listPuertaGOs) // Para todos los Objetos que están en "listPuertaGOs"
         {
-            //Do Something
+            Debug.Log("Encontré un Objeto! '" + PuertaGO.name + "'");
+            PuertaGO.gameObject.SetActive(true); // Los activo
+            Animator anim = PuertaGO.transform.parent.GetComponentInChildren<Animator>(); // Busco el Animator en los Hijos del Padre
+            anim.SetBool("cerrarPuerta", true); // Seteo la Variable "cerrarPuerta" en TRUE
         }
     }
-    */
 }
