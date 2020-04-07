@@ -24,14 +24,16 @@ public class SistemaFallandoPuertas : MonoBehaviour
 
     public void SistemaFallando()
     {
-        listPuertaGOs = GameObject.FindGameObjectsWithTag("ColliderPuerta"); // Busco todos los GameObjects que tengan el Tag "ColliderPuerta"
+        listPuertaGOs = GameObject.FindGameObjectsWithTag("Puerta"); // Busco todos los GameObjects que tengan el Tag "ColliderPuerta"
 
         foreach (GameObject PuertaGO in listPuertaGOs) // Para todos los Objetos que están en "listPuertaGOs"
         {
             Debug.Log("Encontré un Objeto! '" + PuertaGO.name + "'");
             PuertaGO.gameObject.SetActive(true); // Los activo
-            Animator anim = PuertaGO.transform.parent.GetComponentInChildren<Animator>(); // Busco el Animator en los Hijos del Padre
+            Animator anim = PuertaGO.GetComponentInChildren<Animator>(); // Busco el Animator en los Hijos del Padre
             anim.SetBool("cerrarPuerta", true); // Seteo la Variable "cerrarPuerta" en TRUE
+            ContenedorColliderPuerta contColliderPuerta = PuertaGO.GetComponent<ContenedorColliderPuerta>(); // Busco el Contenedor del ColliderPuerta
+            contColliderPuerta.objColliderPuerta.SetActive(true); // Activo el ColliderPuerta
         }
     }
 }
