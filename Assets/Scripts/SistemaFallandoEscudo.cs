@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SistemaFallandoEscudo : MonoBehaviour
 {
+    // No funciona y de momento lo descartamos
+
     [Header("Objetos a Mover")]
     public GameObject objetoEscenario;
     public GameObject objetoJugador;
