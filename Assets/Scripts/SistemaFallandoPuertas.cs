@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class SistemaFallandoPuertas : MonoBehaviour
 {
+    public GameObject objetoSonido;
     private GameObject[] listaPuertaGOs;
 
     public void SistemaFallando()
     {
+        objetoSonido.SetActive(true);
         listaPuertaGOs = GameObject.FindGameObjectsWithTag("Puerta"); // Busco todos los GameObjects que tengan el Tag "ColliderPuerta"
 
         foreach (GameObject PuertaGO in listaPuertaGOs) // Para todos los Objetos que están en "listPuertaGOs"
