@@ -5927,6 +5927,11 @@ PrefabInstance:
       propertyPath: sistemaDe
       value: Puertas
       objectReference: {fileID: 0}
+    - target: {fileID: 8705568610374619073, guid: 91c14f8c1ff5d9a4da08b7b878a04bda,
+        type: 3}
+      propertyPath: Priority
+      value: 65
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91c14f8c1ff5d9a4da08b7b878a04bda, type: 3}
 --- !u!4 &4037093967359809353 stripped
