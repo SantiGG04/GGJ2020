@@ -256,19 +256,17 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   uIMision: {fileID: 0}
   textoReloj: {fileID: 0}
+  txtTitle: {fileID: 0}
   error: 0
   roto: 0
   tiempoParaErrorOriginal: 30
-  tiempoParaErrorReal: 0
   tiempoParaError: 0
   tiempoParaRomperOriginal: 30
-  tiempoParaRomperReal: 0
   tiempoParaRomper: 0
   errorEjecutado: 0
   tiempoDisminuidoError: 1
   tiempoDisminuidoReparar: 15
   imagenObjetoRoto: {fileID: 7892147548492429964}
-  txtTitle: {fileID: 0}
   contendedorSonidoError: {fileID: 3998526559625528186}
   contendedorSonidoRota: {fileID: 2306695636440218985}
   contendedorSonidoArreglando: {fileID: 8996735162483110305}
@@ -1048,6 +1046,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 471379436}
     m_Modifications:
+    - target: {fileID: 9176081327078627301, guid: ce199c6d5eb57ca45acd9eb95ae0e867,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9176081327078627303, guid: ce199c6d5eb57ca45acd9eb95ae0e867,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d50fa3d99a6741242818834f08a66d8f, type: 2}
     - target: {fileID: 9176081327379037350, guid: ce199c6d5eb57ca45acd9eb95ae0e867,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1107,6 +1115,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Alarm
+      objectReference: {fileID: 0}
+    - target: {fileID: 9176081328333906763, guid: ce199c6d5eb57ca45acd9eb95ae0e867,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce199c6d5eb57ca45acd9eb95ae0e867, type: 3}

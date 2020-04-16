@@ -1310,6 +1310,16 @@ PrefabInstance:
       propertyPath: txtTitle
       value: 
       objectReference: {fileID: 1034397661}
+    - target: {fileID: 8677151567665678839, guid: 61a32103d22ce3a41b959ebd210106bc,
+        type: 3}
+      propertyPath: tiempoParaErrorOriginal
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677151567665678839, guid: 61a32103d22ce3a41b959ebd210106bc,
+        type: 3}
+      propertyPath: tiempoParaRomperOriginal
+      value: 120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61a32103d22ce3a41b959ebd210106bc, type: 3}
 --- !u!4 &383707062 stripped
@@ -4512,6 +4522,16 @@ PrefabInstance:
       propertyPath: txtTitle
       value: 
       objectReference: {fileID: 841233910}
+    - target: {fileID: 7295653517420461325, guid: e69040b05c1e2d340ba8e789a035d90d,
+        type: 3}
+      propertyPath: tiempoParaErrorOriginal
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295653517420461325, guid: e69040b05c1e2d340ba8e789a035d90d,
+        type: 3}
+      propertyPath: tiempoParaRomperOriginal
+      value: 120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e69040b05c1e2d340ba8e789a035d90d, type: 3}
 --- !u!1001 &1872515499
@@ -5545,6 +5565,16 @@ PrefabInstance:
       propertyPath: txtTitle
       value: 
       objectReference: {fileID: 110808853}
+    - target: {fileID: 8677151567665678839, guid: 4e4114b5039aa2b4fb778a277e90909b,
+        type: 3}
+      propertyPath: tiempoParaErrorOriginal
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8677151567665678839, guid: 4e4114b5039aa2b4fb778a277e90909b,
+        type: 3}
+      propertyPath: tiempoParaRomperOriginal
+      value: 120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e4114b5039aa2b4fb778a277e90909b, type: 3}
 --- !u!1001 &2603767738171777867
@@ -5657,7 +5687,12 @@ PrefabInstance:
     - target: {fileID: 817695932155714026, guid: adacd99eb9ef3794ba5aceed543312ee,
         type: 3}
       propertyPath: tiempoParaRomperOriginal
-      value: 10
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 817695932155714026, guid: adacd99eb9ef3794ba5aceed543312ee,
+        type: 3}
+      propertyPath: tiempoParaErrorOriginal
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7840188810216329169, guid: adacd99eb9ef3794ba5aceed543312ee,
         type: 3}
@@ -5927,6 +5962,16 @@ PrefabInstance:
       propertyPath: sistemaDe
       value: Puertas
       objectReference: {fileID: 0}
+    - target: {fileID: 4887818923385383936, guid: 91c14f8c1ff5d9a4da08b7b878a04bda,
+        type: 3}
+      propertyPath: tiempoParaErrorOriginal
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4887818923385383936, guid: 91c14f8c1ff5d9a4da08b7b878a04bda,
+        type: 3}
+      propertyPath: tiempoParaRomperOriginal
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 8705568610374619073, guid: 91c14f8c1ff5d9a4da08b7b878a04bda,
         type: 3}
       propertyPath: Priority
@@ -6047,6 +6092,16 @@ PrefabInstance:
       propertyPath: txtTitle
       value: 
       objectReference: {fileID: 1803249501}
+    - target: {fileID: 3277965888534324456, guid: 59d11e9b1db4bf84a9dcbe78e48846f8,
+        type: 3}
+      propertyPath: tiempoParaErrorOriginal
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3277965888534324456, guid: 59d11e9b1db4bf84a9dcbe78e48846f8,
+        type: 3}
+      propertyPath: tiempoParaRomperOriginal
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 3277965888534324457, guid: 59d11e9b1db4bf84a9dcbe78e48846f8,
         type: 3}
       propertyPath: m_Constraints
