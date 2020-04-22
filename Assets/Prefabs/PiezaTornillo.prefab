@@ -142,6 +142,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombrePieza: Tornillo
   contenedor: {fileID: 0}
+  colliderPieza: {fileID: 7015649377624858557}
+  imagenPieza: {fileID: 6439438676743337186}
+  hasRespawn: 1
+  timeRespawn: 10
+  timer: 0
   contendedorSonidoAgarrarPieza: {fileID: 6622883215196145698}
 --- !u!1 &4249321188484583235
 GameObject:

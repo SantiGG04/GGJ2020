@@ -314,6 +314,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombrePieza: Tubo
   contenedor: {fileID: 0}
+  colliderPieza: {fileID: 8326632021324364618}
+  imagenPieza: {fileID: 415371531421005867}
+  hasRespawn: 1
+  timeRespawn: 10
+  timer: 0
   contendedorSonidoAgarrarPieza: {fileID: 5865788592387678078}
 --- !u!1001 &8571785693696819633
 PrefabInstance:

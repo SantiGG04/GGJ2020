@@ -282,6 +282,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombrePieza: Bateria
   contenedor: {fileID: 0}
+  colliderPieza: {fileID: 4765461971725865107}
+  imagenPieza: {fileID: 2946695164102052577}
+  hasRespawn: 1
+  timeRespawn: 10
+  timer: 0
   contendedorSonidoAgarrarPieza: {fileID: 5428390842623107919}
 --- !u!1 &8838160018425820722
 GameObject:

@@ -313,6 +313,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombrePieza: Cinta
   contenedor: {fileID: 0}
+  colliderPieza: {fileID: 4878857777197644536}
+  imagenPieza: {fileID: 2318647755358426625}
+  hasRespawn: 1
+  timeRespawn: 10
+  timer: 0
   contendedorSonidoAgarrarPieza: {fileID: 3298107257624534127}
 --- !u!1001 &745157835431887520
 PrefabInstance:

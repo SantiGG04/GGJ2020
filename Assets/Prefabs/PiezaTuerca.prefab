@@ -314,6 +314,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombrePieza: Tuerca
   contenedor: {fileID: 0}
+  colliderPieza: {fileID: 3820189381153742152}
+  imagenPieza: {fileID: 1876255831115371077}
+  hasRespawn: 1
+  timeRespawn: 10
+  timer: 0
   contendedorSonidoAgarrarPieza: {fileID: 4615232272489734416}
 --- !u!1001 &7466677109276426207
 PrefabInstance:
