@@ -4491,7 +4491,7 @@ PrefabInstance:
         type: 3}
       propertyPath: contenedorPieza01
       value: 
-      objectReference: {fileID: 1215649532}
+      objectReference: {fileID: 1515237499}
     - target: {fileID: 7295653517420461325, guid: e69040b05c1e2d340ba8e789a035d90d,
         type: 3}
       propertyPath: contenedorPieza02
@@ -4501,7 +4501,7 @@ PrefabInstance:
         type: 3}
       propertyPath: contenedorPieza03
       value: 
-      objectReference: {fileID: 347865922}
+      objectReference: {fileID: 1215649532}
     - target: {fileID: 7295653517420461325, guid: e69040b05c1e2d340ba8e789a035d90d,
         type: 3}
       propertyPath: gameManager
@@ -5936,7 +5936,7 @@ PrefabInstance:
         type: 3}
       propertyPath: contenedorPieza03
       value: 
-      objectReference: {fileID: 347865922}
+      objectReference: {fileID: 1305135078}
     - target: {fileID: 4887818923385383936, guid: 91c14f8c1ff5d9a4da08b7b878a04bda,
         type: 3}
       propertyPath: gameManager
