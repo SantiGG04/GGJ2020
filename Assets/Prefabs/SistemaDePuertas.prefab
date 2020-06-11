@@ -835,7 +835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37296b9086fe4b4488a8c6dafe146ab4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sistemaDe: Escudo
+  sistemaDe: Puertas
   Cartel: {fileID: 4887818921695129221}
   contenedorPieza01: {fileID: 0}
   contenedorPieza02: {fileID: 0}
