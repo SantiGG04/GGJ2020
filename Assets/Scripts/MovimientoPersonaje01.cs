@@ -33,7 +33,7 @@ public class MovimientoPersonaje01 : MonoBehaviour
 	[Header("Layers")]
 	public LayerMask layerParedes;
 
-	void FixedUpdate()
+	void Update()
     {
         if (estoyPenalizado)
         {

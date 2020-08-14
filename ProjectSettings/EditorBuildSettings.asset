@@ -19,6 +19,9 @@ EditorBuildSettings:
     guid: ec561e4e54389d34cad408cbb3778d0c
   - enabled: 1
     path: Assets/Escenas/Nivel0001.unity
+    guid: d46ed42cb2b04c041ad98ecaf0ce4ee0
+  - enabled: 1
+    path: Assets/Escenas/Nivel0002.unity
     guid: 222b0bccd367be741a2ffe0bd70deefc
   - enabled: 1
     path: Assets/Escenas/Tutorial.unity
