@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 8589277534713274971}
   - component: {fileID: 4406711516684557144}
   - component: {fileID: 4410641682274866170}
-  - component: {fileID: 5504756866039562299}
-  - component: {fileID: 6337360398564868915}
   - component: {fileID: 1973576125}
   m_Layer: 0
   m_Name: PowerUp
@@ -64,32 +62,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &5504756866039562299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1817540774777288236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ca4211db18f0646bf7cce5b4998752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  impulsoSalto: 1
---- !u!114 &6337360398564868915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1817540774777288236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ca4211db18f0646bf7cce5b4998752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  impulsoSalto: 2
 --- !u!114 &1973576125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,7 +74,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15d6516e429c7824b9a94689583726c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadNormal: 0
 --- !u!1 &1861841635143163787
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,7 +87,6 @@ GameObject:
   - component: {fileID: 4831307203436528088}
   - component: {fileID: 4477738039497202478}
   - component: {fileID: 4881072551183395756}
-  - component: {fileID: 8475476958211644936}
   m_Layer: 12
   m_Name: LimiteEnemgioL
   m_TagString: Piso
@@ -214,19 +184,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &8475476958211644936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1861841635143163787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ca4211db18f0646bf7cce5b4998752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  impulsoSalto: 1
 --- !u!1 &3177309440716554807
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,7 +278,6 @@ GameObject:
   - component: {fileID: 2820290712130519788}
   - component: {fileID: 817575004450415143}
   - component: {fileID: 291896279112782604}
-  - component: {fileID: 9213973554435253818}
   m_Layer: 12
   m_Name: LimiteEnemgioR
   m_TagString: Piso
@@ -419,19 +375,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &9213973554435253818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3218351150639275830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ca4211db18f0646bf7cce5b4998752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  impulsoSalto: 1
 --- !u!1 &4377574384221408353
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,7 +422,6 @@ GameObject:
   - component: {fileID: 4336010072341036665}
   - component: {fileID: 4325222180532934873}
   - component: {fileID: 6437974682268995577}
-  - component: {fileID: 4378743622892264314}
   m_Layer: 9
   m_Name: Fisica
   m_TagString: Piso
@@ -531,19 +473,6 @@ Rigidbody:
   m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!114 &6437974682268995577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4378036279927890525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ca4211db18f0646bf7cce5b4998752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  impulsoSalto: 1
---- !u!114 &4378743622892264314
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

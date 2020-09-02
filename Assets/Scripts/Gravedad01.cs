@@ -19,11 +19,23 @@ public class Gravedad01 : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		RaycastHit Hit;
-		Ray Colision = new Ray(origenRayCast.transform.position, Vector3.down);
-		Debug.DrawRay(origenRayCast.transform.position, Vector3.down * distanciaRayCast);
+        //Amortiguación Caída (Detecta un poco antes de tocar el suelo para bajar la fuerza de la caída y que no se entierre en el piso)
+        float distanciaAmortiguacion;
+        distanciaAmortiguacion = distanciaRayCast + 0.2f; //Quizás hay que ajustar este número dependiendo de cada juego
+        RaycastHit amortiguarCaida;
+        Ray Col = new Ray(origenRayCast.transform.position, Vector3.down);
+        Debug.DrawRay(origenRayCast.transform.position, Vector3.down * distanciaAmortiguacion);
 
-		if (Physics.Raycast(Colision, out Hit, distanciaRayCast, layerPiso))
+        if (FuerzaVertical < -1 && Physics.Raycast(Col, out amortiguarCaida, distanciaAmortiguacion, layerPiso))
+        {
+            FuerzaVertical = -1;
+        }
+
+        RaycastHit Hit;
+        Ray Colision = new Ray(origenRayCast.transform.position, Vector3.down);
+        Debug.DrawRay(origenRayCast.transform.position, Vector3.down * distanciaRayCast);
+
+        if (Physics.Raycast(Colision, out Hit, distanciaRayCast, layerPiso))
 		{
 			EnPiso = true;
 			Animator anim = gameObject.GetComponentInChildren<Animator>();

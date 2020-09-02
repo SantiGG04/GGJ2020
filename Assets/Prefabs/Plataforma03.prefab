@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 4628391406500788290}
   - component: {fileID: 4666847031952242552}
   - component: {fileID: 4677309538816233944}
-  - component: {fileID: 2717681905693902584}
   - component: {fileID: 4623805618849731195}
   m_Layer: 9
   m_Name: Fisica
@@ -60,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 4624785989697645404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.26437497, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4621821459062256512}
   m_RootOrder: 0
@@ -94,19 +93,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &2717681905693902584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4624785989697645404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ca4211db18f0646bf7cce5b4998752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  impulsoSalto: 1
 --- !u!114 &4623805618849731195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ca4211db18f0646bf7cce5b4998752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impulsoSalto: 15
+  impulsoSalto: 10
 --- !u!1 &4624957277414327648
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,7 +153,6 @@ GameObject:
   - component: {fileID: 6614888329875934189}
   - component: {fileID: 8626643663612488486}
   - component: {fileID: 8710635167975791117}
-  - component: {fileID: 230245118056771387}
   m_Layer: 12
   m_Name: LimiteEnemgioR
   m_TagString: Piso
@@ -265,19 +250,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &230245118056771387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5784455664955594295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ca4211db18f0646bf7cce5b4998752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  impulsoSalto: 1
 --- !u!1 &5834255590684724022
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,7 +344,6 @@ GameObject:
   - component: {fileID: 4603561570736310489}
   - component: {fileID: 4813078699664626223}
   - component: {fileID: 4562831459354436269}
-  - component: {fileID: 680487700071503625}
   m_Layer: 12
   m_Name: LimiteEnemgioL
   m_TagString: Piso
@@ -388,7 +359,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7294131053319673482}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.167, y: 1.18, z: 0}
+  m_LocalPosition: {x: -0.1527, y: 1.18, z: 0}
   m_LocalScale: {x: 0.052011, y: 2.5701363, z: 1}
   m_Children: []
   m_Father: {fileID: 4621821459062256512}
@@ -470,16 +441,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &680487700071503625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7294131053319673482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ca4211db18f0646bf7cce5b4998752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  impulsoSalto: 1
