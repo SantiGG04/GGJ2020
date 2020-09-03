@@ -6,7 +6,7 @@ public class PowerUp_Velocidad0101 : MonoBehaviour
 {
     public void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.transform.parent.name == "Personaje")
+        if (col.gameObject.transform.parent.name == "Fisica")
         {
             MovimientoPersonaje01 movPj = col.GetComponentInParent<MovimientoPersonaje01>();
             movPj.estoyBonificado = true;

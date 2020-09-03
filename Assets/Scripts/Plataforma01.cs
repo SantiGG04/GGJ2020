@@ -11,9 +11,9 @@ public class Plataforma01 : MonoBehaviour
 		if (col.gameObject.transform.parent.name == "Personaje")
 		{
 			Gravedad01 Grav = col.gameObject.GetComponentInChildren<Gravedad01>();
-            Debug.Log(Grav.FuerzaVertical);
 			if (Grav.FuerzaVertical <= 0)
 			{
+                Debug.Log("Impulsando");
 				Grav.FuerzaVertical = Grav.FuerzaVertical + impulsoSalto;
 				Grav.EnAire();
 			}

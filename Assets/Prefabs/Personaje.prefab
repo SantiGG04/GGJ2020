@@ -915,6 +915,7 @@ GameObject:
   - component: {fileID: 3236779177781367898}
   - component: {fileID: 3236779177781367899}
   - component: {fileID: 3186348}
+  - component: {fileID: 5895515884274825005}
   m_Layer: 8
   m_Name: Personaje
   m_TagString: Player
@@ -1003,6 +1004,19 @@ MonoBehaviour:
   positionCamara07: {x: -101.23, y: 1, z: -11.49}
   posCam07_A: -111.4
   posCam07_B: -89.87
+--- !u!65 &5895515884274825005
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3236779177781368230}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 1, z: 1}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &3236779178096866067
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,7 +1117,7 @@ BoxCollider:
   m_GameObject: {fileID: 3236779178291890680}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}

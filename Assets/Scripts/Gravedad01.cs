@@ -35,9 +35,10 @@ public class Gravedad01 : MonoBehaviour
         Ray Colision = new Ray(origenRayCast.transform.position, Vector3.down);
         Debug.DrawRay(origenRayCast.transform.position, Vector3.down * distanciaRayCast);
 
-        if (Physics.Raycast(Colision, out Hit, distanciaRayCast, layerPiso))
+        if (FuerzaVertical <= 0 && //Esto es sólo porque es un plataformero y no quiero que detecte las colisiones con el piso al saltar
+            Physics.Raycast(Colision, out Hit, distanciaRayCast, layerPiso))
 		{
-			EnPiso = true;
+            EnPiso = true;
 			Animator anim = gameObject.GetComponentInChildren<Animator>();
 			anim.SetBool("Jumping", false);
 			FuerzaVertical = 0;
@@ -51,7 +52,7 @@ public class Gravedad01 : MonoBehaviour
 		{
 			EnAire ();
 		}
-
+        /*
 		if (FuerzaVertical <= 0)// Activa el IgnoreLayerCollision para poder atravesar pisos (Plataformero)
 		{
 			NoSaltarPisos ();
@@ -61,6 +62,7 @@ public class Gravedad01 : MonoBehaviour
 		{
 			SaltarPisos ();
 		}
+        */
 	}
 
 	public void EnAire()
@@ -87,7 +89,7 @@ public class Gravedad01 : MonoBehaviour
 			}
 		}
 	}
-
+    /*
 	public void SaltarPisos()
 	{
 		Physics.IgnoreLayerCollision(8,9);
@@ -97,4 +99,5 @@ public class Gravedad01 : MonoBehaviour
 	{
 		Physics.IgnoreLayerCollision(8,9, false);
 	}
+    */
 }

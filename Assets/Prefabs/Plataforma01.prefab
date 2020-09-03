@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 4600082194103510}
   - component: {fileID: 65572743453062124}
   - component: {fileID: 54652909712758092}
-  - component: {fileID: 7321775459850158700}
   m_Layer: 9
   m_Name: Fisica
   m_TagString: Piso
@@ -96,19 +95,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &7321775459850158700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1553527903055816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ca4211db18f0646bf7cce5b4998752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  impulsoSalto: 2
 --- !u!1 &1183757797570007715
 GameObject:
   m_ObjectHideFlags: 0

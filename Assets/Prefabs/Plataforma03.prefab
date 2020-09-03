@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 4628391406500788290}
   - component: {fileID: 4666847031952242552}
   - component: {fileID: 4677309538816233944}
-  - component: {fileID: 4623805618849731195}
+  - component: {fileID: 8003880132588367254}
   m_Layer: 9
   m_Name: Fisica
   m_TagString: Piso
@@ -93,7 +93,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &4623805618849731195
+--- !u!114 &8003880132588367254
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,10 +102,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4624785989697645404}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ca4211db18f0646bf7cce5b4998752, type: 3}
+  m_Script: {fileID: 11500000, guid: 039093585017ae84397c68097ed8e1d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impulsoSalto: 10
+  impulsoSalto: 6
 --- !u!1 &4624957277414327648
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,7 +159,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5353701099523081083
 Transform:
   m_ObjectHideFlags: 0
@@ -350,7 +350,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4003308631654930254
 Transform:
   m_ObjectHideFlags: 0
