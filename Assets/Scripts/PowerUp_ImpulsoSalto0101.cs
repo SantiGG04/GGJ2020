@@ -15,6 +15,17 @@ public class PowerUp_ImpulsoSalto0101 : MonoBehaviour
             Grav.FuerzaVertical = Grav.FuerzaVertical + impulsoSalto;
             Debug.Log(Grav.FuerzaVertical);
             Grav.EnAire();
+
+            SaltoPersonaje01 Salto = col.gameObject.GetComponentInParent<SaltoPersonaje01>();
+            Salto.SaltosRestantes = 0;
+        }
+    }
+
+    public void OnTriggerStay(Collider col)
+    {
+        if (col.gameObject.transform.parent.name == "Fisica")
+        {
+            
         }
     }
 }
