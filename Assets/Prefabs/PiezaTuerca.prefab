@@ -60,6 +60,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -317,7 +318,7 @@ MonoBehaviour:
   colliderPieza: {fileID: 3820189381153742152}
   imagenPieza: {fileID: 1876255831115371077}
   hasRespawn: 1
-  timeRespawn: 10
+  timeRespawn: 30
   timer: 0
   contendedorSonidoAgarrarPieza: {fileID: 4615232272489734416}
 --- !u!1001 &7466677109276426207

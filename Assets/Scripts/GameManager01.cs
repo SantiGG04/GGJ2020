@@ -10,6 +10,7 @@ public class GameManager01 : MonoBehaviour
     public static GameManager01 instance;
 
     [Header("Condiciones Derrota/Victoria")]
+    public int nivelDeRoturaParaDerrota;
     public int nivelDeRotura;
     public float tiempoVictoria;
 
@@ -60,11 +61,12 @@ public class GameManager01 : MonoBehaviour
             SceneManager.LoadScene(escenaVictoria); // Se carga la Escena Victoria
         }
 
-        if (nivelDeRotura == 3)
+        if (nivelDeRotura >= nivelDeRoturaParaDerrota)
         {
             SalirDeNivel();
             SceneManager.LoadScene(escenaDerrota); // Se carga la Escena Derrota
         }
+        //TODO: Habría que hacer una función que haga que cada vez que se rompe la máquina esto cambie, y que calcule cuánto debería cambiar según el nivelDeRoturaParaDerrota, que podría cambiar en ciertos niveles de dificultad
         else if (nivelDeRotura == 2)
         {
             audioGameA.volume = 0.0f; // Música OFF
