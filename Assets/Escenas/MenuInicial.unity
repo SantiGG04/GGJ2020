@@ -194,11 +194,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 322367216465701516, guid: 1fc9ba730142cb7409df1118f1039477,
-        type: 3}
-      propertyPath: canvasGameManager
-      value: 
-      objectReference: {fileID: 1570389827}
     - target: {fileID: 322367216465701517, guid: 1fc9ba730142cb7409df1118f1039477,
         type: 3}
       propertyPath: m_Name
@@ -258,26 +253,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 322367217266680781, guid: 1fc9ba730142cb7409df1118f1039477,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 713644967}
-    - target: {fileID: 322367217362493011, guid: 1fc9ba730142cb7409df1118f1039477,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4139250293065587039, guid: 1fc9ba730142cb7409df1118f1039477,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 470
-      objectReference: {fileID: 0}
-    - target: {fileID: 5741158182798414333, guid: 1fc9ba730142cb7409df1118f1039477,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fc9ba730142cb7409df1118f1039477, type: 3}
@@ -515,6 +490,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -592,6 +568,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -844,6 +821,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -933,6 +911,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1088,6 +1067,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1122,12 +1102,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sonidoClick: {fileID: 1695526684}
---- !u!223 &1570389827 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 322367217266680781, guid: 1fc9ba730142cb7409df1118f1039477,
-    type: 3}
-  m_PrefabInstance: {fileID: 675743436}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1695526682
 GameObject:
   m_ObjectHideFlags: 0
